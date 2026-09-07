@@ -1,0 +1,18 @@
+body{
+	background: linear-gradient(to bottom, #b3e5fc, pink);
+	margin: 0;
+}
+
+div{
+	background: #e27bb1;
+	margin-bottom: 70px;
+}
+
+div a{
+	margin: 50px;
+}
+
+h1{
+	color: pink;
+	text-align: center;
+}
