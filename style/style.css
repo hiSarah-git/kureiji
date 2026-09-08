@@ -2,7 +2,7 @@ body {
 	background: linear-gradient(to bottom, #b3e5fc, pink);
 }
 
-ul {
+div {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
