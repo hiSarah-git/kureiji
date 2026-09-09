@@ -67,3 +67,10 @@ footer {
 	padding: 15px;
 	margin-top: 20px;
 }
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}

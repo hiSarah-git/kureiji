@@ -28,15 +28,24 @@ ul li a:hover {
 a {
 	display: block;
 	color: white;
-	padding: 14px 30px;
+	padding: 10px 10px;
 	text-decoration: none;
 	text-align: center;
 }
 
 a:hover {
-	background-color: #4dd0e1;
+	background-color: transparent;
+
 }
 
 a:visited {
 	color: #c21e56;
+}
+
+h3 {
+	color: #62021e;
+}
+
+td {
+	font-weight: bold;
 }
