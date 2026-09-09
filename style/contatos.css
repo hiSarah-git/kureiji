@@ -1,0 +1,42 @@
+body {
+	background: linear-gradient(to bottom, #b3e5fc, rgb(255, 192, 203));
+	margin: 0;
+}
+
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: pink;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+ul li a {
+	display: block;
+	color: white;
+	padding: 14px 30px;
+	text-decoration: none;
+}
+
+ul li a:hover {
+	background-color: #4dd0e1;
+}
+
+a {
+	display: block;
+	color: white;
+	padding: 14px 30px;
+	text-decoration: none;
+	text-align: center;
+}
+
+a:hover {
+	background-color: #4dd0e1;
+}
+
+a:visited {
+	color: #c21e56;
+}

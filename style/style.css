@@ -1,14 +1,16 @@
 body {
-	background: linear-gradient(to bottom, #b3e5fc, pink);
+	background: linear-gradient(to bottom, #b3e5fc, rgb(255, 192, 203));
+	margin: 0;
 }
 
-div {
+ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	background-color: pink;
-  	display: flex;
+	display: flex;
 	justify-content: center;
+	flex-direction: row;
 }
 
 ul li a {
@@ -39,11 +41,29 @@ a:visited {
 }
 
 
-h1{
+h1 {
 	color: #62021e;
 	text-align: center;
 }
 
-p{
+h3 {
 	color: #62021e;
+}
+
+p {
+	color: #62021e;
+}
+
+
+footer {
+	background-color: rgb(255, 192, 203);
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+#copyright {
+	border-top: 1px solid rgb(236, 112, 164);
+	padding: 15px;
+	margin-top: 20px;
 }
