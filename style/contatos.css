@@ -1,6 +1,6 @@
 body {
-	background: rgb(244, 218, 222);
-	margin: 0;
+  background: rgb(244, 218, 222);
+  margin: 0;
 }
 
 .conteudo {
@@ -8,45 +8,58 @@ body {
 }
 
 .barranavegacao ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	background-color: pink;
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .barranavegacao ul li a {
-	display: block;
-	color: white;
-	padding: 14px 30px;
-	text-decoration: none;
+  display: block;
+  color: white;
+  padding: 14px 30px;
+  text-decoration: none;
 }
 
 .barranavegacao ul li a:hover {
-	background-color: #4dd0e1;
+  background-color: #4dd0e1;
 }
 
 .barranavegacao ul li a:visited {
-	color: #c21e56;
+  color: #c21e56;
 }
 
-
-h2, h3 {
-	color: #62021e;
+h2,
+h3 {
+  color: #62021e;
 }
 
 .contato {
   color: #ff1b5c;
   font-size: 17px;
-	margin: 35px;
 }
 
-.contato a{
-	color: #ff1b5c;
-	font-size: 17px;
-	text-decoration: none;
+.contato img {
+  width: 30px;
+  height: 25px;
+  margin-right: 8px;
+}
+
+.contato a {
+  color: #ff1b5c;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.contato a:hover {
+  color: #1e8390;
+}
+
+.contato a:visited {
+  color: #b41945;
 }
 
 .endereco {
@@ -75,14 +88,14 @@ h2, h3 {
 }
 
 footer {
-	background-color: rgb(255, 192, 203);
-	color: white;
-	text-align: center;
-	padding: 20px;
+  background-color: rgb(255, 192, 203);
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 #copyright {
-	border-top: 1px solid rgb(236, 112, 164);
-	padding: 15px;
-	margin-top: 20px;
+  border-top: 1px solid rgb(236, 112, 164);
+  padding: 15px;
+  margin-top: 20px;
 }
