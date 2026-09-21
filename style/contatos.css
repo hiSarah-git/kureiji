@@ -1,0 +1,48 @@
+body {
+	background: rgb(244, 218, 222);
+	margin: 0;
+}
+
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: pink;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.barranavegacao ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: pink;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.barranavegacao ul li a {
+	display: block;
+	color: white;
+	padding: 14px 30px;
+	text-decoration: none;
+}
+
+.barranavegacao ul li a:hover {
+	background-color: #4dd0e1;
+}
+
+.barranavegacao ul li a:visited {
+	color: #c21e56;
+}
+
+h3 {
+	color: #62021e;
+}
+
+td {
+	font-weight: bold;
+}

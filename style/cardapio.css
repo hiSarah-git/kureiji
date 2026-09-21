@@ -1,0 +1,64 @@
+body {
+	background: rgb(244, 218, 222);
+	margin: 0;
+}
+
+.barranavegacao ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: pink;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.barranavegacao ul li a {
+	display: block;
+	color: white;
+	padding: 14px 30px;
+	text-decoration: none;
+}
+
+.barranavegacao ul li a:hover {
+	background-color: #4dd0e1;
+}
+
+.barranavegacao ul li a:visited {
+	color: #c21e56;
+}
+
+h1 {
+	color: #62021e;
+	text-align: center;
+}
+
+h3 {
+	color: #62021e;
+}
+
+p {
+	color: #62021e;
+}
+
+
+footer {
+	background-color: rgb(255, 192, 203);
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+#copyright {
+	border-top: 1px solid rgb(236, 112, 164);
+	padding: 15px;
+	margin-top: 20px;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
