@@ -1,10 +1,15 @@
 body {
-  background: rgb(244, 218, 222);
+  background: url("../imagens/frentedaloja.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
 }
 
 .conteudo {
-  margin: 10px;
+  background-color: #f9e1e9cc;
+  border-radius: 30px;
+  padding: 50px;
+  margin: 20px 30px;
 }
 
 .barranavegacao ul {
@@ -14,7 +19,6 @@ body {
   background-color: pink;
   display: flex;
   justify-content: center;
-  flex-direction: row;
 }
 
 .barranavegacao ul li a {
@@ -32,14 +36,14 @@ body {
   color: #c21e56;
 }
 
-h2,
-h3 {
+h2, h3 {
   color: #62021e;
 }
 
 .contato {
   color: #ff1b5c;
-  font-size: 17px;
+  font-size: 16px;
+  border-bottom: 1px solid #62021e;
 }
 
 .contato img {
