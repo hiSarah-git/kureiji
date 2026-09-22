@@ -1,48 +1,131 @@
 body {
-	background: rgb(244, 218, 222);
-	margin: 0;
+  background: url("../imagens/frentedaloja.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
 }
 
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	background-color: pink;
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
+.conteudo {
+  background-color: #f9e1e9cc;
+  border-radius: 30px;
+  padding: 50px;
+  margin: 20px 30px;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .barranavegacao ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	background-color: pink;
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
 }
 
 .barranavegacao ul li a {
-	display: block;
-	color: white;
-	padding: 14px 30px;
-	text-decoration: none;
+  display: block;
+  color: white;
+  padding: 14px 30px;
+  text-decoration: none;
 }
 
 .barranavegacao ul li a:hover {
-	background-color: #4dd0e1;
+  background-color: #4dd0e1;
 }
 
 .barranavegacao ul li a:visited {
-	color: #c21e56;
+  color: #c21e56;
+}
+
+h2 {
+  color: #62021e;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: bold;
 }
 
 h3 {
-	color: #62021e;
+  color: #62021e;
+  font-family: 'Nunito Sans SemiBold', sans-serif;
 }
 
-td {
-	font-weight: bold;
+.contato {
+  color: #ff1b5c;
+  font-size: 16px;
+  border-bottom: 1px solid #62021e;
+  text-align: center;
+}
+
+.contato img {
+  width: 45px;
+  margin-right: 8px;
+}
+
+.contato a {
+  color: #ff1b5c;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+#instagram:hover {
+  color: #1cadc0;
+  filter: brightness(70%);
+  text-decoration: underline;
+}
+
+#instagram:visited {
+  color: #62021e;
+  filter: brightness(70%);
+}
+
+#tiktok:hover {
+  color: #1cadc0;
+  filter: brightness(70%);
+  text-decoration: underline;
+}
+
+#tiktok:visited {
+  color: #62021e;
+  filter: brightness(70%);
+}
+
+.endereco {
+  margin-bottom: 16;
+  text-align: center;
+}
+
+.endereco img {
+  width: 45px;
+}
+
+.endereco tr td:first-child {
+  padding-right: 4rem;
+  color: #62021e;
+}
+
+.endereco tr {
+  color: #1184c2;
+}
+
+.endereco a {
+  color: #ff1b5c;
+}
+
+.endereco a:hover {
+  color: #1e8390;
+  filter: brightness(70%);
+}
+
+footer {
+  background-color: rgb(255, 192, 203);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#copyright {
+  border-top: 1px solid rgb(236, 112, 164);
+  padding: 15px;
+  margin-top: 20px;
 }
