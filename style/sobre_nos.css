@@ -7,7 +7,7 @@ body {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	background-color: pink;
+	background-color: #ffc0cb;
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
@@ -31,6 +31,11 @@ body {
 h1 {
 	color: #62021e;
 	text-align: center;
+	font-family: "Fredoka", sans-serif;
+}
+
+#header{
+  background-image: linear-gradient(to right, #ffc0cb,#ffeebc, #ddc6c6d2);
 }
 
 h3 {
