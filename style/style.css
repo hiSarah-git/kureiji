@@ -63,9 +63,9 @@ body {
 	border-radius: 5px;       
 	font-weight: bold;        
 }
-th.img {
-	width:150px;        
-    height:150px;  
+div.img {
+	width:100px;        
+    height:100px;  
 }
 
 #linkdeavalicao:hover {
