@@ -10,6 +10,7 @@ body {
   border-radius: 30px;
   padding: 50px;
   margin: 20px 30px;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .barranavegacao ul {
@@ -36,19 +37,28 @@ body {
   color: #c21e56;
 }
 
-h2, h3 {
+h2 {
   color: #62021e;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  color: #62021e;
+  font-family: 'Nunito Sans SemiBold', sans-serif;
 }
 
 .contato {
   color: #ff1b5c;
   font-size: 16px;
   border-bottom: 1px solid #62021e;
+  text-align: center;
 }
 
 .contato img {
-  width: 30px;
-  height: 25px;
+  width: 45px;
   margin-right: 8px;
 }
 
@@ -58,16 +68,35 @@ h2, h3 {
   text-decoration: none;
 }
 
-.contato a:hover {
-  color: #1e8390;
+#instagram:hover {
+  color: #1cadc0;
+  filter: brightness(70%);
+  text-decoration: underline;
 }
 
-.contato a:visited {
-  color: #b41945;
+#instagram:visited {
+  color: #62021e;
+  filter: brightness(70%);
+}
+
+#tiktok:hover {
+  color: #1cadc0;
+  filter: brightness(70%);
+  text-decoration: underline;
+}
+
+#tiktok:visited {
+  color: #62021e;
+  filter: brightness(70%);
 }
 
 .endereco {
   margin-bottom: 16;
+  text-align: center;
+}
+
+.endereco img {
+  width: 45px;
 }
 
 .endereco tr td:first-child {
@@ -85,10 +114,7 @@ h2, h3 {
 
 .endereco a:hover {
   color: #1e8390;
-}
-
-.endereco a:visited {
-  color: #b41945;
+  filter: brightness(70%);
 }
 
 footer {
