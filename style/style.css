@@ -68,8 +68,8 @@ body {
 	font-weight: bold;        
 }
 div.img {
-	width:50px;        
-    height:50px;  
+	width:10px;        
+    height:10px;  
 }
 
 #linkdeavalicao:hover {
@@ -82,10 +82,17 @@ h1 {
 	text-align: center;
 	background-color: img;
 }
-
+h2 {
+	
+}
 h3 {
 	color: #62021e;
 }
+h4 {
+	color: blue
+	text-align: center;
+}
+
 
 p {
 	color: #62021e;
