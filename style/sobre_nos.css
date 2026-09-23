@@ -68,7 +68,7 @@ h1 {
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.5;
-    font-family: "Nunito", sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 /* Contentor principal que coloca os dois blocos lado a lado */
@@ -108,13 +108,17 @@ h1 {
     margin: 0;
     font-size: 1.6rem;
     font-weight: bold;
+    font-family: 'Fredoka', sans-serif;
 }
 
 .cartao-perfil .cargo {
-    font-size: 0.95rem;
+    font-size:13.5px;
     opacity: 0.9;
     margin-top: 8px;
     margin-bottom: 35px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+
 }
 
 /* Ícones decorativos no fundo do cartão */
@@ -148,7 +152,7 @@ h1 {
     font-weight: normal;
     margin-bottom: 18px;
     color: #1f0109;
-    font-size: 0.95rem;
+    font-size: 16.5px;
     text-align: justify;
     font-family: 'Nunito', sans-serif;
 }
@@ -219,24 +223,60 @@ a {
     color: #c21e56;
 }
 
-.imagens-fundadores img {
-    width: 200px;
-    height: 200px;
-    align-items: flex-start;
-}
-
-.imagens-fundadores{
-    background-color: #8a63d2;
-    max-width: 650px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 50px;
-    padding: 60px 20px;
+.secao-fundadores {
+    display: flex ;
+    width: 100%;
     max-width: 1200px;
+    padding: 60px 20px;
     margin: 0 auto;
+    background-color: #c286f3; /* Mantém o fundo creme da página */
+    border-radius: 10px;
 }
 
-.imagens-fundadores h1{
-    text-align:center;
+.imagens-fundadores {
+    background-color: #c286f3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    padding: 20px 20px 40px 20px;
+    margin-top: 0; 
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Faz o título ocupar a linha inteira no topo e ficar centralizado */
+.titulo-fundadores {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: 2.5rem;
+    font-family: 'Fredoka', sans-serif;
+}
+
+
+/* Agrupa a imagem e o nome lado a lado e centralizados verticalmente */
+.fundador-item {
+    display: flex;
+    align-items: center;
+    gap: 20px 60px; /* Espaço entre a foto e o nome */
+}
+
+.fundador-item img {
+    width: 200px;  /* Ajuste o tamanho da foto se achar necessário */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Deixa a foto redonda, se quiser */
+}
+
+.fundador-item p {
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff; /* Garante que o texto fique legível no fundo roxo */
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin: 0;
 }
