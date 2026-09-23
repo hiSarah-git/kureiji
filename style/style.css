@@ -86,20 +86,10 @@ h1, h2, h3, h4 {
   padding: 20px;     
 }
 
-h1 {
+h1,h3,p{
   color: #62021e;
   text-align: center;
 }
-
-h3 {
-  color: #62021e;
-}
-
-p {
-  color: #62021e;
-  text-align: center;
-}
-
 
 .destaques {
   background-color: white;
@@ -107,6 +97,7 @@ p {
   margin: 20px auto;       
   padding: 20px;         
   border-radius: 12px;
+  display: flex;   
 }
 
 .destaques h4 {
@@ -132,7 +123,7 @@ span {
 
 
 footer {
-	background-color: rgb(255, 192, 203);
+	background-color:deeppink
 	color: white;
 	text-align: center;
 	padding: 20px;
