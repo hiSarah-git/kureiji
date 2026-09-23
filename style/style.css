@@ -9,7 +9,7 @@ body {
   color: #62021e; 
 }
 .banner{
-	background-image: url("../imagens/frentedaloja.jpg");
+	background-image: url("imagens/frentedaloja.jpg");
 	background-size: cover;
 	background-position: center;
 	height: 650px;
@@ -126,17 +126,19 @@ h2 {
 
 .link-dragao{
 	color:maroon;
+	font-weight: bold;
+	text-decoration: underline;
 
 	
 }
 .link-cardapio, .link-avaliacao{
 	color:maroon;
 	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
 	
 }
 
-.link-dragao:hover, .link-cardapio:hover, .link-avaliacao:hover {
-  background-color:darkred;
 }
 
 
