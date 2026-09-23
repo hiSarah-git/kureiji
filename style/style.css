@@ -8,7 +8,7 @@ body {
   font-family: 'Nunito', sans-serif;
   color: #62021e; 
 }
-.baner{
+.banner{
 	background-image: url("../imagens/frentedaloja.jpg");
 	background-size: cover;
 	background-position: center;
@@ -47,16 +47,6 @@ h1, h2, h3, h4 {
 
 .barranavegacao ul li a:hover {
   background-color: #4dd0e1; 
-}
-.banner {
-  background-image: url("../imagens/frentedaloja.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .banner img {
