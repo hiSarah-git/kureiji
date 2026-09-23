@@ -8,7 +8,8 @@ body {
   font-family: 'Nunito', sans-serif;
   color: #62021e; 
 }
-.baner{background-image: url("../imagens/frentedaloja.jpg");
+.baner{
+	background-image: url("../imagens/frentedaloja.jpg");
 	background-size: cover;
 	background-position: center;
 	height: 650px;
@@ -32,7 +33,7 @@ h1, h2, h3, h4 {
   gap: 10px;
 }
 
-.barranavegacao ul li a {
+.barranavegacao ul li a{
   display: inline-block;
   color: white;
   text-decoration: none; /
@@ -40,6 +41,8 @@ h1, h2, h3, h4 {
   font-weight: bold;
   
 }
+.barranavegacao ul li a:visited {
+	color: #c21e56;
 
 .barranavegacao ul li a:hover {
   background-color: #4dd0e1; 
@@ -131,21 +134,14 @@ h2 {
 }
 
 .link-dragao{
-	color:white;
-	background-color: maroon;
-	margin-bottom: 20px; 
-	margin-top: 30px;
-	display: inline-block;
+	color:maroon;
+
 	
 }
 .link-cardapio, .link-avaliacao{
-	color:white;
-	background-color: maroon;
+	color:maroon;
 	text-align: center;
-	margin-bottom: 20px; 
-	margin-top: 30px;
-	display: inline-block;
-	text-aling:center
+	
 }
 
 .link-dragao:hover, .link-cardapio:hover, .link-avaliacao:hover {
