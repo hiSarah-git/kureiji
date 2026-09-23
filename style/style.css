@@ -1,8 +1,12 @@
-body {
-	background: rgb(244, 218, 222);
+*{
 	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body{
+	background: rgb(244, 218, 222);
+}
 .banner {
 	background-image: url("../imagens/frentedaloja.jpg");
 	background-size: cover;
@@ -14,91 +18,82 @@ body {
 	align-items: center;
 }
 
+h1, h2, h3, h4 {
+  font-family: Fredoka;
+}
+
+
 .banner img {
 	width: 300px;
 }
 
 .banner h1 {
 	color: white;
-}
-
-.barranavegacao ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	background-color: pink;
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	gap: 10px;
-}
-
-.barranavegacao ul li a {
-	display: inline-block; 
-	color: white;
-	text-decoration: none;
-	padding: 14px 40px; 
-}
-
-.barranavegacao ul li a:hover {
-	background-color: #4dd0e1;
-	border-radius: 70px; 
-}
-
-.barranavegacao ul li a:visited {
-	color: #c21e56;
-}
-.conteudo-principal {
-  max-width: 800px;  
-  margin: 0 auto;    
-  padding: 20px;     
-}
-#linkdeavalicao {
-	display: block;
-	color: white;
-	padding: 30px 60px;
-	text-decoration: none;
-	text-align: center;
-
-	max-width: 200px;    
-	margin: 0 auto;
-
-	border: 2px solid whitesmoke; 
-	border-radius: 5px;       
-	font-weight: bold;        
-}
-div.img {
-	width:10px;        
-    height:10px;  
-}
-
-#linkdeavalicao:hover {
-	background-color: #4dd0e1;
-}
-
-
-h1 {
-	color: #62021e;
-	text-align: center;
-	background-color: img;
-}
-h2 {
 	
 }
-h3 {
-	color: #62021e;
+
+barranavegacao ul {
+  list-style: none; 
+  display: flex;    
+  justify-content: center; 
+  gap: 10px;        
+}
+.destaques {
+  background-color: white; 
+  max-width: 350px;        
+  margin: 20px auto;       
+}
+.destaques h4 {
+  font-size: 16px;
+  color: darkred;
+  margin-bottom: 12px; 
 }
 
-h4 {
-	color: blue;
-	text-align: center;
+.destaques img {
+  width: 100%;       
+  height: 200px;    
+  object-fit: cover; 
+}
+span{
+	color:maron
+	
 }
 
 
-p {
-	color: #62021e;
-	text-align: center;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
 	background-color: rgb(255, 192, 203);
