@@ -17,6 +17,11 @@ h1, h2, h3, h4 {
   background-color: pink;
   display: flex;    
   justify-content: center; 
+  margin: 0;
+	padding: 0;
+	background-color: pink;
+	flex-direction: row;
+	gap: 10px;
 }
 
 .barranavegacao ul li a {
@@ -25,6 +30,7 @@ h1, h2, h3, h4 {
   text-decoration: none; /
   padding: 14px 40px;
   font-weight: bold;
+  
 }
 
 .barranavegacao ul li a:hover {
