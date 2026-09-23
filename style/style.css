@@ -1,138 +1,185 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
-  background: rgb(244, 218, 222);
+  background-color: rgb(244, 218, 222);
   font-family: 'Nunito', sans-serif;
   color: #62021e;
 }
 
 h1, h2, h3, h4 {
-  font-family:Fredoka;
+  font-family: 'Fredoka', sans-serif;
 }
 
-
-.barranavegacao ul {
-  list-style: none; 
-  background-color: pink;
-  display: flex;   
-  justify-content: center; 
-  flex-direction: row; 
-  gap: 10px;        
+.navbar ul {
+  list-style: none;
+  background-color: #f9a8d4;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
 }
 
-.barranavegacao ul li a {
-  display: inline-block; 
+.navbar ul li a {
+  display: inline-block;
   color: white;
-  text-decoration: none; 
-  padding: 14px 40px;    
+  text-decoration: none;
+  font-weight: 600;
+  padding: 14px 40px;
 }
 
-.barranavegacao ul li a:hover {
+.navbar ul li a:hover {
   background-color: #4dd0e1;
-  border-radius: 70px;   
+  border-radius: 70px;
 }
-
-
-.barranavegacao ul li a:visited {
-  color: #c21e56;
-}
-
 
 .banner {
-  background-image: url("../imagens/frentedaloja.jpg");
-  background-size: cover;     
-  background-position: center; 
+  background-image: url('https://images.unsplash.com/photo-1664850315047-061924d6cd0d?w=1400&h=800&fit=crop');
+  background-size: cover;
+  background-position: center;
   height: 650px;
-  
   display: flex;
-  flex-direction: column;    
-  justify-content: center;   
-  align-items: center;       
-}
-
-.banner img {
-  width: 300px; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .banner h1 {
-  color: white; 
-}
-
-
-
-#linkdeavalicao {
-  display: block;
   color: white;
-  padding: 15px 30px; 
-  text-align: center;
-  max-width: 250px;    
-  margin: 20px auto;  
-  border: 2px solid; 
-  border-radius: 5px;              
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 
-
-#linkdeavalicao:hover {
-  background-color: #4dd0e1;
-}
-
-.conteudo-principal {
-  max-width: 800px;  
-  margin: 0 auto;    
-  padding: 20px;     
-}
-
-h1,h3,p{
-  color: #62021e;
-  text-align: center;
-}
-
-.destaques {
-  background-color: white;
-  max-width: 350px;        
-  margin: 20px auto;       
-  padding: 20px;         
-  border-radius: 12px;
-  display: flex;   
-}
-
-.destaques h4 {
-  font-size: 16px;
-  color: darkred;
-  text-align: center;
-  margin-bottom: 12px;     
-}
-
-.destaques img {
-  width: 100%;       
-  height: 200px;    
- 
-}
-
-span {
-  display: block;
-  color: maroon;
-  font-weight: bold;
-  text-align: center;
+.logo-texto {
+  color: white;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  background-color: rgba(255,255,255,0.15);
+  padding: 10px 30px;
+  border-radius: 16px;
   margin-top: 10px;
 }
 
-
-footer {
-	background-color:deeppink
-	color: white;
-	text-align: center;
-	padding: 20px;
+.banner-sub {
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 12px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
-#copyright {
-	border-top: 1px solid rgb(236, 112, 164);
-	padding: 15px;
-	margin-top: 20px;
+/* ========== BOTÃO AVALIE ========== */
+.centralizar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 20px;
 }
 
+.botao-avalie {
+  display: inline-block;
+  color: #62021e;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  padding: 16px 50px;
+  border: 2px solid #62021e;
+  border-radius: 8px;
+}
+
+.botao-avalie:hover {
+  background-color: #4dd0e1;
+  color: white;
+  border-color: #4dd0e1;
+}
+
+/* ========== CONTEÚDO ========== */
+.conteudo {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 20px 40px;
+  text-align: center;
+}
+
+.conteudo p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #62021e;
+}
+
+.conteudo h2 {
+  font-size: 2.2rem;
+  color: #62021e;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 240px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h4 {
+  color: blue;
+  font-size: 1.1rem;
+  padding: 12px 12px 4px;
+}
+
+.card p {
+  color: #62021e;
+  font-size: 0.875rem;
+  padding: 0 12px 12px;
+  line-height: 1.5;
+}
+
+.preco {
+  display: block;
+  color: #62021e;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0 12px 16px;
+}
+
+.botao-link {
+  display: inline-block;
+  color: #62021e;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 2px solid #f9a8d4;
+  border-radius: 8px;
+}
+
+.botao-link:hover {
+  background-color: #4dd0e1;
+  border-color: #4dd0e1;
+  color: white;
+}
 
