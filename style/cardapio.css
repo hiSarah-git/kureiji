@@ -23,30 +23,37 @@ body {
 }
 
 .barranavegacao ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	background-color: pink;
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	gap: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 35px;
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .barranavegacao ul li a {
-	display: inline-block; 
-	color: white;
-	text-decoration: none;
-	padding: 14px 40px; 
+  display: block;
+  color: white;
+  padding: 8px 25px;
+  text-decoration: none;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 20px;
 }
 
 .barranavegacao ul li a:hover {
-	background-color: #4dd0e1;
-	border-radius: 70px; 
+  background-color: #4dd0e1;
+  border-radius: 30px;
+}
+
+#logo {
+  width: 100px;
+  text-align: left;
+  display: block;
 }
 
 .barranavegacao ul li a:visited {
-	color: #c21e56;
+  color: #c21e56;
 }
 
 h1 {
@@ -74,17 +81,19 @@ p {
 
 a[target="_blank"] {
 	color: #62021e;
-    display: block;
+    display: flex;
     text-align: center;  
 	background-position: center;
 	border: 2px solid #62021e;
+	border-radius: 20px;
     padding: 10px 20px;
 	text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
 }
 
 a:hover, a:active {
   background-color: #62021e;
+  border-radius: 30px;
   color: white;
 }
 
