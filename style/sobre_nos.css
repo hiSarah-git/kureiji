@@ -1,5 +1,5 @@
 body {
-    background: rgb(244, 218, 222);
+    background: #64572c;
     margin: 0;
 }
 
@@ -38,8 +38,7 @@ h1 {
     text-align: center;
     padding: 40px 20px;
     font-family: 'Fredoka', sans-serif;
-    background: linear-gradient(to bottom, #fff9e6, #f0f0f0);
-    /* Corrigido para 'background' */
+    background: linear-gradient(to bottom, #fff5d6, #ffd6d8);
     border-bottom: 2px solid #ffc0cb;
 }
 
@@ -133,6 +132,7 @@ h1 {
 /* 2. O Bloco de Texto à Direita */
 .conteudo-historia {
     max-width: 650px;
+
 }
 
 .conteudo-historia h1 {
@@ -154,7 +154,8 @@ h1 {
 }
 
 footer {
-    background-color: #3b2a2e; /* Fundo escuro idêntico à imagem */
+    background-color: #3b2a2e;
+    /* Fundo escuro idêntico à imagem */
     color: #e6c5cc;
     padding: 50px 20px 20px 20px;
     font-family: 'Arial', sans-serif;
@@ -181,7 +182,8 @@ footer {
     text-transform: uppercase;
 }
 
-.footer-coluna p, .footer-coluna ul {
+.footer-coluna p,
+.footer-coluna ul {
     font-size: 0.95rem;
     line-height: 1.6;
     color: #d1b2be;
@@ -211,4 +213,26 @@ footer {
     margin-top: 40px;
     font-size: 0.85rem;
     color: #b394a1;
+}
+
+a {
+    color: #c21e56;
+}
+
+.imagens-fundadores img {
+    width: 200px;
+    height: 200px;
+    align-items: flex-start;
+}
+
+.imagens-fundadores{
+    background-color: #8a63d2;
+    max-width: 650px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
