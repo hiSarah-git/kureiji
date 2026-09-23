@@ -3,6 +3,25 @@ body {
 	margin: 0;
 }
 
+.banner {
+	background-image: url("../imagens/kureijiinterno.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 650px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner img {
+	width: 300px;
+}
+
+.banner h1 {
+	color: white;
+}
+
 .barranavegacao ul {
 	list-style-type: none;
 	margin: 0;
@@ -11,17 +30,19 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
+	gap: 10px;
 }
 
 .barranavegacao ul li a {
-	display: block;
+	display: inline-block; 
 	color: white;
-	padding: 14px 30px;
 	text-decoration: none;
+	padding: 14px 40px; 
 }
 
 .barranavegacao ul li a:hover {
 	background-color: #4dd0e1;
+	border-radius: 70px; 
 }
 
 .barranavegacao ul li a:visited {
@@ -33,14 +54,39 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	text-align: center;
+	padding: 14px;
+}
+
 h3 {
 	color: #62021e;
+	text-align: center;
 }
 
 p {
 	color: #62021e;
 }
 
+.links {
+    text-align: center;
+}
+
+a[target="_blank"] {
+	color: #62021e;
+    display: block;
+    text-align: center;  
+	background-position: center;
+	border: 2px solid #62021e;
+    padding: 10px 20px;
+	text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #62021e;
+  color: white;
+}
 
 footer {
 	background-color: rgb(255, 192, 203);
