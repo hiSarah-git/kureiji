@@ -15,7 +15,9 @@ body {
 }
 
 .banner img {
-	width: 300px;
+	width: 400px;
+ 	height: auto;
+	border-radius: 20px;
 }
 
 .banner h1 {
@@ -48,11 +50,13 @@ body {
 .barranavegacao ul li a:visited {
 	color: #c21e56;
 }
+
 .conteudo-principal {
   max-width: 800px;  
   margin: 0 auto;    
   padding: 20px;     
 }
+
 #linkdeavalicao {
 	display: block;
 	color: white;
@@ -67,6 +71,7 @@ body {
 	border-radius: 5px;       
 	font-weight: bold;        
 }
+
 div.img {
 	width:10px;        
     height:10px;  
