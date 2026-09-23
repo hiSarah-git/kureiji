@@ -122,6 +122,29 @@ h2 {
   margin-top: 40px;
 }
 
+.link-dragao{
+	color:white;
+	background-color: pink;
+	margin-bottom: 20px; 
+	margin-top: 30px;
+	display: inline-block;
+	
+}
+.link-cardapio, .link-avaliacao{
+	color:white;
+	background-color: pink;
+	text-align: center;
+	margin-bottom: 20px; 
+	margin-top: 30px;
+	display: inline-block;
+	
+}
+
+.link-dragao:hover, .link-cardapio:hover, .link-avaliacao:hover {
+  background-color: hotpink;
+}
+
+
 #copyright {
   border-top: 1px solid rgb(236, 112, 164);
   padding-top: 15px;
