@@ -43,6 +43,7 @@ h1, h2, h3, h4 {
 }
 .barranavegacao ul li a:visited {
 	color: #c21e56;
+}
 
 .barranavegacao ul li a:hover {
   background-color: #4dd0e1; 
