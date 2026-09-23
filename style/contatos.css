@@ -129,7 +129,6 @@ h3 {
 
 footer {
     background-color: #3b2a2e;
-    /* Fundo escuro idêntico à imagem */
     color: #e6c5cc;
     padding: 50px 20px 20px 20px;
     font-family: 'Arial', sans-serif;
@@ -191,26 +190,4 @@ footer {
 
 a {
     color: #c21e56;
-}
-
-.imagens-fundadores img {
-    width: 200px;
-    height: 200px;
-    align-items: flex-start;
-}
-
-.imagens-fundadores{
-    background-color: #8a63d2;
-    max-width: 650px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 50px;
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.imagens-fundadores h1{
-    text-align:center;
 }
