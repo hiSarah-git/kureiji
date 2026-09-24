@@ -84,6 +84,9 @@ h3 {
 
 p {
 	color: #62021e;
+	text-align: center;
+	font-family: 'Fredoka', sans-serif;
+	font-size: 18px;
 }
 
 #header {
@@ -134,7 +137,7 @@ p {
 /* Estilo para o parágrafo descritivo abaixo */
 #header p {
     font-size: 1.05rem;
-    color: #62021e;
+    color: #d1b2be;
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.5;
