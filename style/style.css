@@ -10,7 +10,7 @@ body {
 }
 
 .banner{
-	background-image: url("imagens/frentedaloja.jpg");
+	background-image: url("../imagens/frentedaloja.jpg");
 	background-size: cover;
 	background-position: center;
 	height: 650px;
