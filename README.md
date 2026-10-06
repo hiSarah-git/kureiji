@@ -68,63 +68,15 @@ Os esboços abaixo representam a organização prevista das telas, sem detalhar 
 
 ### 7.1 Início
 
-```text
-+--------------------------------------------------------------+
-| INÍCIO       CARDÁPIO       SOBRE NÓS       CONTATO/ENDEREÇO |
-+--------------------------------------------------------------+
-|                    Foto da fachada da loja                   |
-|                  Mensagem de boas-vindas                      |
-|                         Logotipo                              |
-+--------------------------------------------------------------+
-|                 Apresentação da Kureiji Candy                |
-+--------------------------------------------------------------+
-|                         DESTAQUES                            |
-|   [Foto]             [Foto]              [Foto]              |
-|   Produto             Produto             Produto            |
-|   Descrição/preço     Descrição/preço     Descrição/preço    |
-+--------------------------------------------------------------+
-| Avalie nossa loja       Ver mais produtos / Cardápio          |
-+--------------------------------------------------------------+
-| Rodapé: marca, endereço, telefone e direitos reservados       |
-+--------------------------------------------------------------+
-```
+![Captura de Tela](/imagens/screenshots/Inicio.png)
 
 ### 7.2 Cardápio
 
-```text
-+--------------------------------------------------------------+
-| INÍCIO       CARDÁPIO       SOBRE NÓS       CONTATO/ENDEREÇO |
-+--------------------------------------------------------------+
-|                   Imagem de apresentação                     |
-|                 Chamada para ver o cardápio                  |
-|                [Abrir cardápio externo]                      |
-+--------------------------------------------------------------+
-|                   RECOMENDAÇÕES DA CASA                      |
-|             Produto / imagem / informações                   |
-|             Produto / imagem / informações                   |
-+--------------------------------------------------------------+
-| Rodapé: marca, endereço, telefone e direitos reservados       |
-+--------------------------------------------------------------+
-```
+![Captura de Tela](/imagens/screenshots/Cardapio.png)
 
 ### 7.3 Sobre nós
 
-```text
-+--------------------------------------------------------------+
-| INÍCIO       CARDÁPIO       SOBRE NÓS       CONTATO/ENDEREÇO |
-+--------------------------------------------------------------+
-|                  CONHEÇA NOSSA HISTÓRIA                      |
-|                    Sobre a Kureiji Candy                     |
-+--------------------------------------------------------------+
-| [Foto ou perfil da marca] | História, origem e proposta      |
-|                           | da doceria em texto               |
-+--------------------------------------------------------------+
-|                         FUNDADORES                           |
-|                Fotos e identificação dos fundadores           |
-+--------------------------------------------------------------+
-| Rodapé: marca, navegação, contato e direitos reservados       |
-+--------------------------------------------------------------+
-```
+![Captura de Tela](/imagens/screenshots/Sobre_nos.png)
 
 ### 7.4 Contato e endereço
 
