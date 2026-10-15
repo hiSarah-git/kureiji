@@ -22,6 +22,19 @@ body {
 
 img {
 	border-radius: 40px;
+    
+}
+
+.img-linha1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.img-linha1 img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* impede que a imagem fique distorcida*/
 }
 
 .banner h1 {
@@ -80,13 +93,15 @@ h2 {
 h3 {
 	color: #62021e;
 	text-align: center;
+    font-size: 30px;
+
 }
 
 p {
 	color: #62021e;
 	text-align: center;
 	font-family: 'Fredoka', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 #header {
