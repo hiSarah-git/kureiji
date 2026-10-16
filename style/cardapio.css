@@ -271,3 +271,266 @@ footer {
 a {
     color: #c21e56;
 }
+
+
+
+/* ========================================
+   KUREIJI GANDY — ESTILO DO CARDÁPIO
+   ======================================== */
+
+.pagina-cardapio {
+    background: rgb(244, 218, 222);
+    color: #62021e;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Cabeçalho e navegação */
+
+.pagina-cardapio .navbar {
+    background-color: pink;
+    border-radius: 20px;
+    padding: 12px 24px;
+}
+
+.pagina-cardapio .navbar-brand {
+    color: #62021e;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.pagina-cardapio .navbar-brand:hover {
+    color: #c21e56;
+}
+
+.pagina-cardapio .nav-link {
+    color: #62021e;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    padding: 8px 16px;
+    transition: background-color 0.2s ease;
+}
+
+.pagina-cardapio .nav-link:hover,
+.pagina-cardapio .nav-link.active {
+    background-color: #4dd0e1;
+    color: #62021e;
+}
+
+/* Título do cardápio */
+
+.pagina-cardapio .subtitulo {
+    color: #8a63d2;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.pagina-cardapio main h1 {
+    color: #62021e;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+.pagina-cardapio main .lead {
+    color: #62021e;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+}
+
+/* Pesquisa e seleção de categorias */
+
+.pagina-cardapio .form-label {
+    color: #62021e;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+}
+
+.pagina-cardapio .form-control,
+.pagina-cardapio .form-select {
+    background-color: #fff8fa;
+    border: 1px solid #d98caa;
+    border-radius: 12px;
+    color: #62021e;
+    padding: 12px 14px;
+}
+
+.pagina-cardapio .form-control:focus,
+.pagina-cardapio .form-select:focus {
+    border-color: #c21e56;
+    box-shadow: 0 0 0 0.2rem rgba(194, 30, 86, 0.15);
+}
+
+/* Cards dos doces */
+
+.pagina-cardapio .card {
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff8fa;
+    border: 1px solid rgba(98, 2, 30, 0.08);
+    border-radius: 24px;
+    box-shadow: 0 5px 15px rgba(98, 2, 30, 0.08);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.pagina-cardapio .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(98, 2, 30, 0.16);
+}
+
+/* Imagens dos produtos */
+
+.pagina-cardapio .imagem-doce {
+    display: block;
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+/* Conteúdo dos cards */
+
+.pagina-cardapio .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+}
+
+.pagina-cardapio .etiqueta {
+    align-self: flex-start;
+    background-color: #f6c8d5;
+    color: #62021e;
+    border-radius: 20px;
+    padding: 7px 12px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+}
+
+.pagina-cardapio .card-title {
+    color: #62021e;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-align: left;
+    padding: 0;
+    margin: 8px 0 12px;
+}
+
+.pagina-cardapio .card-text {
+    color: #6d4652;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.pagina-cardapio .preco {
+    color: #c21e56;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: left;
+    margin: 15px 0;
+}
+
+/* Botões */
+
+.pagina-cardapio .btn-detalhes {
+    background-color: #62021e;
+    color: white;
+    border: 2px solid #62021e;
+    border-radius: 25px;
+    padding: 10px 16px;
+    font-family: 'Fredoka', sans-serif;
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
+}
+
+.pagina-cardapio .btn-detalhes:hover {
+    background-color: #c21e56;
+    border-color: #c21e56;
+    color: white;
+}
+
+.pagina-cardapio .btn-detalhes:focus-visible {
+    outline: 3px solid #8a63d2;
+    outline-offset: 3px;
+}
+
+/* Mensagem quando não há resultados */
+
+.pagina-cardapio #mensagemVazia {
+    color: #62021e;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Janela de detalhes */
+
+.pagina-cardapio .modal-content {
+    background-color: #fff8fa;
+    border: 2px solid #f6c8d5;
+    border-radius: 24px;
+}
+
+.pagina-cardapio .modal-header {
+    border-bottom-color: #f0c1cf;
+}
+
+.pagina-cardapio .modal-title {
+    color: #62021e;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+}
+
+.pagina-cardapio .modal-body p {
+    color: #62021e;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.pagina-cardapio .modal-footer {
+    border-top-color: #f0c1cf;
+}
+
+/* Rodapé */
+
+.pagina-cardapio footer {
+    background-color: #3b2a2e;
+    color: #e6c5cc;
+    margin-top: 40px;
+    padding: 30px 20px;
+}
+
+.pagina-cardapio footer p {
+    color: #e6c5cc;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+}
+
+/* Ajustes para celulares */
+
+@media (max-width: 576px) {
+    .pagina-cardapio .navbar {
+        padding: 10px 14px;
+    }
+
+    .pagina-cardapio main h1 {
+        font-size: 2.2rem;
+    }
+
+    .pagina-cardapio .imagem-doce {
+        height: 220px;
+    }
+
+    .pagina-cardapio .card-body {
+        padding: 18px;
+    }
+}

@@ -17,11 +17,13 @@
 		href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
 		rel="stylesheet">
 
-
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../style/cardapio.css" />
 </head>
 
-<body>
+
+<body class="pagina-cardapio">
+	
 	<div class="barranavegacao">
 		<ul>
 			<li><img src="../imagens/logo_kureiji_transparente.png" id="logo"></li>
@@ -39,47 +41,183 @@
 
 	<h3>Recomendações da Casa</h3>
 
-	<table>
-		<tr>
-			<div class="img-linha1">
-			<td> <img src="../imagens/kureijibalcao.jpg" /> </td>
-			<td> <img src="../imagens/kureiji4.1doces.jpg" /> </td>
-			<td> <img src="../imagens/kureiji4doces.jpg" /> </td>
-			</div>
-		</tr>
-		<tr>
-			<td> <p>
-				Na Kureiji Candy, você encontra uma variedade de doces 
-			    preparados com cuidado e dedicação. Cada opção é pensada 
-			    para proporcionar uma experiência saborosa e especial. </p> </td>
-			<td> <img src="../imagens/kureijibalcao.jpg" /> </td>
-		</tr>
-		<tr>
-			<td> <p>
-				Nosso cardápio reúne diferentes sabores e combinações 
-				para agradar todos os gostos. <br> Escolha seu favorito e 
-				aproveite um momento doce e delicioso. </br> </p> </td>
-			<td> <img src="../imagens/kureiji4.1doces.jpg" /> </td>
-		</tr>
+	   
 
-        <tr>
-			<td> <p> 
-				Mais do que doces, queremos proporcionar momentos especiais. 
-				Explore nosso cardápio e descubra opções feitas para trazer 
-				sabor, criatividade e um toque de encanto ao seu dia. </p> </td>
-			<td> <img src="../imagens/kureiji4doces.jpg" /> </td>
-		</tr>
+    <main class="container py-5">
 
-        <tr>
-			<td> <p> 
-				M . </p> </td>
-			<td> <img src="../imagens/.jpg" /> </td>
-		</tr>
+        <section class="text-center mb-5">
+            <p class="text-uppercase subtitulo">Pequenas delícias japonesas</p>
+            <h1 class="display-4 fw-bold">Nosso delícias</h1>
+            <p class="lead">
+                Descubra doces inspirados na delicadeza da confeitaria japonesa.
+            </p>
+        </section>
 
+        <section aria-label="Pesquisar e filtrar doces" class="mb-4">
+            <div class="row g-3 align-items-center">
 
+                <div class="col-md-6">
+                    <label for="pesquisa" class="form-label">
+                        Buscar um doce
+                    </label>
+                    <input type="search" id="pesquisa"
+                        class="form-control"
+                        placeholder="Ex.: mochi, matcha...">
+                </div>
 
+                <div class="col-md-6">
+                    <label for="categoria" class="form-label">
+                        Categoria
+                    </label>
+                    <select id="categoria" class="form-select">
+                        <option value="todos">Todas as categorias</option>
+                        <option value="mochi">Mochi</option>
+                        <option value="bolos">Bolos e tortas</option>
+                        <option value="tradicionais">Doces tradicionais</option>
+                    </select>
+                </div>
 
-	</table>
+            </div>
+        </section>
+
+        <section>
+            <div id="listaDoces" class="row g-4">
+
+                <div class="col-sm-6 col-lg-4 produto"
+                    data-nome="Mochi de morango"
+                    data-categoria="mochi"
+                    data-descricao="Doce de arroz macio com recheio de morango."
+                    data-preco="12,00">
+
+                    <article class="card h-100">
+                        <img src="../img/doces/mochi-morango.jpg"
+                            class="card-img-top imagem-doce"
+                            alt="Mochi recheado com morango">
+
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge etiqueta mb-2">Mochi</span>
+                            <h2 class="card-title h5">Mochi de morango</h2>
+                            <p class="card-text">
+                                Macio, delicado e com recheio frutado.
+                            </p>
+
+                            <div class="mt-auto">
+                                <p class="preco">R$ 12,00</p>
+                                <button class="btn btn-detalhes w-100"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#modalDoce"
+                                    data-produto="Mochi de morango">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 produto"
+                    data-nome="Bolo de matcha"
+                    data-categoria="bolos"
+                    data-descricao="Bolo delicado inspirado no sabor do chá verde japonês."
+                    data-preco="18,00">
+
+                    <article class="card h-100">
+                        <img src="../img/doces/bolo-matcha.jpg"
+                            class="card-img-top imagem-doce"
+                            alt="Fatia de bolo verde de matcha">
+
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge etiqueta mb-2">Bolos</span>
+                            <h2 class="card-title h5">Bolo de matcha</h2>
+                            <p class="card-text">
+                                Sabor marcante de chá verde japonês.
+                            </p>
+
+                            <div class="mt-auto">
+                                <p class="preco">R$ 18,00</p>
+                                <button class="btn btn-detalhes w-100"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#modalDoce"
+                                    data-produto="Bolo de matcha">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 produto"
+                    data-nome="Dorayaki"
+                    data-categoria="tradicionais"
+                    data-descricao="Doce japonês feito com duas pequenas panquecas e recheio tradicional."
+                    data-preco="15,00">
+
+                    <article class="card h-100">
+                        <img src="../img/doces/dorayaki.jpg"
+                            class="card-img-top imagem-doce"
+                            alt="Dorayaki japonês com recheio">
+
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge etiqueta mb-2">
+                                Tradicionais
+                            </span>
+                            <h2 class="card-title h5">Dorayaki</h2>
+                            <p class="card-text">
+                                Um clássico da confeitaria japonesa.
+                            </p>
+
+                            <div class="mt-auto">
+                                <p class="preco">R$ 15,00</p>
+                                <button class="btn btn-detalhes w-100"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#modalDoce"
+                                    data-produto="Dorayaki">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <p id="mensagemVazia" class="text-center py-5 d-none">
+                Nenhum doce encontrado. Tente outra pesquisa.
+            </p>
+        </section>
+
+    </main>
+
+    <div class="modal fade" id="modalDoce" tabindex="-1"
+        aria-labelledby="tituloModal" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="tituloModal">
+                        Detalhes do doce
+                    </h2>
+
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Fechar"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p id="descricaoModal"></p>
+                    <p class="fw-bold" id="precoModal"></p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 		<h2>Confira Nosso Cardápio:</h2>
@@ -131,5 +269,8 @@
 
 	</footer>
 </body>
+
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../js/cardapio.js"></script>
 
 </html>
