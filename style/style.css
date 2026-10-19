@@ -19,7 +19,6 @@ a {
   text-decoration: none;
 }
 
-/* Navegação */
 .navbar {
   background-color: pink !important;
   padding: 12px 35px;
@@ -45,7 +44,6 @@ a {
   background-color: #c21e56 !important;
 }
 
-/* Banner */
 .banner {
   display: flex;
   flex-direction: column;
@@ -95,28 +93,29 @@ a {
   line-height: 1.6;
 }
 
-/* Cards de Destaques */
 .card {
   background-color: white;
-  border: none;
+  border:1px solid;
   border-radius: 18px;
   overflow: hidden;
 }
 
-.card-img-top {
-  height: 250px;
+.card-img-top { 
+  height: 200px; 
+  width: 100%;
   object-fit: cover;
 }
 
 .card-title {
   color: #8b1538;
+  font-size: 20px;
 }
 
 .card-text {
   color: #62021e;
+  font-size: 16px;
 }
 
-/* Rodapé */
 footer {
   background-color: #3b2a2e;
   color: #e6c5cc;
