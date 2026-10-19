@@ -76,14 +76,13 @@ a {
   font-weight: bold;
 }
 
-/* Apresentação */
 #abertura {
   max-width: 800px;
   margin: 30px auto;
   padding: 25px;
   background-color: white;
   border-radius: 16px;
-  text-align: center;
+ 
 }
 
 #abertura h1 {
