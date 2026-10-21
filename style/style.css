@@ -1,256 +1,161 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: rgb(244, 218, 222); 
-  font-family: 'Nunito', sans-serif;
-  color: #62021e; 
+  background-color: rgb(244, 218, 222);
+  color: #62021e;
+  font-family: "Nunito", sans-serif;
 }
-
-.banner{
-	background-image: url("../imagens/frentedaloja.jpg");
-	background-size: cover;
-	background-position: center;
-	height: 650px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	}
 
 h1, h2, h3, h4 {
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
 }
 
-.barranavegacao ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0px 35px;
-  background-color: pink;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.barranavegacao ul li a {
-  display: block;
-  color: white;
-  padding: 8px 25px;
+a {
+  color: #c21e56;
   text-decoration: none;
-  font-family: 'Fredoka', sans-serif;
-  font-size: 20px;
 }
 
-.barranavegacao ul li a:hover {
-  background-color: #4dd0e1;
+.navbar {
+  background-color: pink !important;
+  padding: 12px 35px;
+}
+
+.navbar-brand {
+  color: #62021e !important;
+  font-family: "Fredoka", sans-serif;
+  font-size: 24px;
+}
+
+.navbar .nav-link {
+  color: #62021e !important;
+  font-family: "Fredoka", sans-serif;
+  font-size: 18px;
+  padding: 8px 20px !important;
   border-radius: 30px;
 }
 
-#logo {
-  width: 100px;
-  text-align: left;
-  display: block;
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: white !important;
+  background-color: #c21e56 !important;
 }
 
-.barranavegacao ul li a:visited {
-  color: #c21e56;
-}
-
-.banner img {
-  width: 200px;
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+  background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("../imagens/frentedaloja.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 30px 20px;
 }
 
 .banner h1 {
   color: white;
+  font-size: 45px;
 }
- 
-    
-#abertura {
-  background-color: white;
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  text-align: center;
-  border-radius: 25px;
 
+.banner img {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.banner .btn-outline {
+  background-color: #c21e56;
+  color: white;
+  border: 2px solid white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+#abertura {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 16px;
+ 
 }
 
 #abertura h1 {
   color: #62021e;
   font-size: 24px;
+  font-weight: normal;
+  line-height: 1.6;
 }
 
-
-h2 {
-  color: #62021e;
-  text-align: center;
-  margin: 30px 0;
-}
-#doces {
-  display: flex;           
-  justify-content: center; 
-
-}
-
-#doces .destaques {
+.card {
   background-color: white;
-  width: 240px;
-  margin: 10px;            
-  padding: 15px;
-  text-align: center;
-  border-radius: 25px;
-
+  border:1px solid;
+  border-radius: 18px;
+  overflow: hidden;
 }
 
-#doces h4 {
-  color: darkred;
-  margin-bottom: 10px;     
+.card-img-top { 
+  height: 200px; 
+  width: 100%;
+  object-fit: cover;
 }
 
-#doces img {
-  width: 100%;             
-  height: 160px;
-  border-radius: 25px;
-           
+.card-title {
+  color: #8b1538;
+  font-size: 20px;
 }
 
-#doces p {
+.card-text {
   color: #62021e;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 16px;
 }
 
-#doces a {
-  color: #4dd0e1;
+footer {
+  background-color: #3b2a2e;
+  color: #e6c5cc;
+  padding: 40px 20px;
+  margin-top: 50px;
 }
 
-#doces span {
-  display: block;
-  color: maroon;
-  font-weight: bold;
-  margin-top: 10px;
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-#rodape {
-  background-color: rgb(255, 192, 203);
-  padding: 30px;
-  text-align: center;
-  margin-top: 40px;
+.footer-coluna {
+  min-width: 200px;
+  flex: 1;
 }
 
-.link-dragao{
-	color:maroon;
-	font-weight: bold;
-	text-decoration: underline;	
+.footer-coluna h3 {
+  color: #ff99bb;
+  margin-bottom: 15px;
 }
 
-
-#linkdeavaliacao {
-    text-align: center;
+.footer-coluna ul {
+  list-style: none;
 }
 
-
-#linkdeavaliacao a[target="_blank"] {
-    color: #62021e;
-    display: flex;
-    text-align: center;  
-    background-position: center;
-    border: 2px solid #62021e;
-    border-radius: 20px;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: inline-flex;
+.footer-coluna a {
+  color: #d1b2be;
 }
 
-
-#linkdeavaliacao a:hover, a:active {
-  background-color: #62021e;
-  border-radius: 30px;
+.footer-coluna a:hover {
   color: white;
 }
 
-
-a {
-    color: #c21e56;
-}
-
-
-
-footer {
-    background-color: #3b2a2e;
-    /* Fundo escuro idêntico à imagem */
-    color: #e6c5cc;
-    padding: 50px 20px 20px 20px;
-    font-family: 'Arial', sans-serif;
-}
-
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 40px;
-}
-
-
-.footer-coluna {
-    flex: 1;
-    min-width: 250px;
-}
-
-
-.footer-coluna h3 {
-    color: #ff99bb;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-family: 'Fredoka', sans-serif;
-    text-align: left ;
-
-
-}
-
-
-.footer-coluna p,
-.footer-coluna ul {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #d1b2be;
-    font-family: 'Nunito', sans-serif;
-    text-align: left ;
-}
-
-
-.footer-coluna ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left ;
-
-
-}
-
-
-.footer-coluna ul li a {
-    color: #d1b2be;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 8px;
-    text-align: left ;
-}
-
-
-.footer-coluna ul li a:hover {
-    color: #ffffff;
-}
-
-
-#copyright {
-  border-top: 1px solid rgb(236, 112, 164);
+.copyright {
+  text-align: center;
+  margin-top: 30px;
   padding-top: 15px;
-  margin-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
