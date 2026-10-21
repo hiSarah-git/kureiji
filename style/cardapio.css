@@ -1,49 +1,70 @@
 body {
-	background: rgb(244, 218, 222);
-	margin: 0;
+    background: rgb(244, 218, 222);
+    margin: 0;
 }
+
 
 .banner {
-	background-image: url("../imagens/kureijiinterno.jpg");
-	background-size: cover;
-	background-position: center;
-	height: 650px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+    background-image: url("../imagens/kureijiinterno.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .banner img {
-	width: 300px;
-	border-radius: 45px;
+    width: 300px;
+    border-radius: 45px;
+    
 
 }
+
 
 img {
-	border-radius: 40px;
-    
+    border-radius: 40px;
+    object-fit: cover; /* impede que a imagem fique distorcida*/
 }
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 
 .img-linha1 {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 10px;
 }
+
 
 .img-linha1 img {
     width: 300px;
-    height: 300px;
+    height: 250px;
     object-fit: cover; /* impede que a imagem fique distorcida*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
 }
 
+
 .banner h1 {
-	color: white;
+    color: white;
 }
+
 
 h1, h2, h3, h4 {
   font-family: 'Fredoka', sans-serif;
 }
+
 
 .barranavegacao ul {
   list-style-type: none;
@@ -55,6 +76,7 @@ h1, h2, h3, h4 {
   align-items: center;
 }
 
+
 .barranavegacao ul li a {
   display: block;
   color: white;
@@ -64,10 +86,12 @@ h1, h2, h3, h4 {
   font-size: 20px;
 }
 
+
 .barranavegacao ul li a:hover {
   background-color: #4dd0e1;
   border-radius: 30px;
 }
+
 
 #logo {
   width: 100px;
@@ -75,34 +99,41 @@ h1, h2, h3, h4 {
   display: block;
 }
 
+
 .barranavegacao ul li a:visited {
   color: #c21e56;
 }
 
+
 h1 {
-	color: #62021e;
-	text-align: center;
+    color: #62021e;
+    text-align: center;
     margin: 30px 0;
 }
 
+
 h2 {
-	text-align: center;
-	padding: 14px;
+    text-align: center;
+    padding: 14px;
 }
+
 
 h3 {
-	color: #62021e;
-	text-align: center;
+    color: #62021e;
+    text-align: center;
     font-size: 30px;
 
+
 }
 
+
 p {
-	color: #62021e;
-	text-align: center;
-	font-family: 'Fredoka', sans-serif;
-	font-size: 20px;
+    color: #62021e;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
 }
+
 
 #header {
     text-align: center;
@@ -111,6 +142,7 @@ p {
     background: linear-gradient(to bottom, #fff5d6, #ffd6d8);
     border-bottom: 2px solid #ffc0cb;
 }
+
 
 /* Estilo para a frase pequena superior */
 #header .subtitulo {
@@ -124,6 +156,7 @@ p {
     font-family: 'Fredoka', sans-serif;
 }
 
+
 /* Estilo para o título principal */
 #header h1 {
     font-size: 2.5rem;
@@ -133,13 +166,15 @@ p {
     font-family: 'Fredoka', sans-serif;
 }
 
+
 #header h2 {
     font-size: 2.5rem;
-	color: white;
+    color: white;
     margin: 0 0 15px 0;
     font-weight: 800;
     font-family: 'Fredoka', sans-serif;
 }
+
 
 #header h3 {
     font-size: 2.5rem;
@@ -148,6 +183,7 @@ p {
     font-weight: 800;
     font-family: 'Fredoka', sans-serif;
 }
+
 
 /* Estilo para o parágrafo descritivo abaixo */
 #header p {
@@ -159,21 +195,24 @@ p {
     font-family: 'Nunito', sans-serif;
 }
 
+
 .links {
     text-align: center;
 }
 
+
 .links a[target="_blank"] {
-	color: #62021e;
+    color: #62021e;
     display: flex;
     text-align: center;  
-	background-position: center;
-	border: 2px solid #62021e;
-	border-radius: 20px;
+    background-position: center;
+    border: 2px solid #62021e;
+    border-radius: 20px;
     padding: 10px 20px;
-	text-decoration: none;
+    text-decoration: none;
     display: inline-flex;
 }
+
 
 .links a:hover, a:active {
   background-color: #62021e;
@@ -181,16 +220,11 @@ p {
   color: white;
 }
 
+
 a {
-	color: #c21e56;
+    color: #c21e56;
 }
 
-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-}
 
 footer {
     background-color: #3b2a2e;
@@ -199,6 +233,7 @@ footer {
     padding: 50px 20px 20px 20px;
     font-family: 'Arial', sans-serif;
 }
+
 
 .footer-content {
     display: flex;
@@ -209,10 +244,12 @@ footer {
     gap: 40px;
 }
 
+
 .footer-coluna {
     flex: 1;
     min-width: 250px;
 }
+
 
 .footer-coluna h3 {
     color: #ff99bb;
@@ -222,7 +259,9 @@ footer {
     font-family: 'Fredoka', sans-serif;
     text-align: left ;
 
+
 }
+
 
 .footer-coluna p,
 .footer-coluna ul {
@@ -233,13 +272,16 @@ footer {
     text-align: left ;
 }
 
+
 .footer-coluna ul {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: left ;
 
+
 }
+
 
 .footer-coluna ul li a {
     color: #d1b2be;
@@ -249,9 +291,11 @@ footer {
     text-align: left ;
 }
 
+
 .footer-coluna ul li a:hover {
     color: #ffffff;
 }
+
 
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -262,21 +306,64 @@ footer {
     color: #b394a1;
 }
 
+
 .copyright p {
     font-family: 'Nunito', sans-serif;
     font-size: 13px;
     color: #b394a1;
 }
 
+
 a {
     color: #c21e56;
 }
 
 
+.carousel-slide {
+    align-items: center;
+    flex: content;
+    flex-direction: 10px;
+}
+
+
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200%;
+    height: 200%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.carousel-icon-next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #62021e;
+    cursor: pointer;
+}
+
+
+.carousel-icon-next span[target="_blank"] {
+    color: #62021e;
+    display: flex;
+    text-align: center;  
+    background-position: center;
+    border: 2px solid #62021e;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-flex;
+}
 
 /* ========================================
    KUREIJI GANDY — ESTILO DO CARDÁPIO
    ======================================== */
+
 
 .pagina-cardapio {
     background: rgb(244, 218, 222);
@@ -284,13 +371,16 @@ a {
     font-family: 'Nunito', sans-serif;
 }
 
+
 /* Cabeçalho e navegação */
+
 
 .pagina-cardapio .navbar {
     background-color: pink;
     border-radius: 20px;
     padding: 12px 24px;
 }
+
 
 .pagina-cardapio .navbar-brand {
     color: #62021e;
@@ -299,9 +389,11 @@ a {
     font-weight: 700;
 }
 
+
 .pagina-cardapio .navbar-brand:hover {
     color: #c21e56;
 }
+
 
 .pagina-cardapio .nav-link {
     color: #62021e;
@@ -312,13 +404,16 @@ a {
     transition: background-color 0.2s ease;
 }
 
+
 .pagina-cardapio .nav-link:hover,
 .pagina-cardapio .nav-link.active {
     background-color: #4dd0e1;
     color: #62021e;
 }
 
+
 /* Título do cardápio */
+
 
 .pagina-cardapio .subtitulo {
     color: #8a63d2;
@@ -329,6 +424,7 @@ a {
     text-transform: uppercase;
 }
 
+
 .pagina-cardapio main h1 {
     color: #62021e;
     font-family: 'Fredoka', sans-serif;
@@ -336,19 +432,23 @@ a {
     margin: 15px 0;
 }
 
+
 .pagina-cardapio main .lead {
     color: #62021e;
     font-family: 'Nunito', sans-serif;
     font-size: 1.1rem;
 }
 
+
 /* Pesquisa e seleção de categorias */
+
 
 .pagina-cardapio .form-label {
     color: #62021e;
     font-family: 'Fredoka', sans-serif;
     font-weight: 600;
 }
+
 
 .pagina-cardapio .form-control,
 .pagina-cardapio .form-select {
@@ -359,13 +459,16 @@ a {
     padding: 12px 14px;
 }
 
+
 .pagina-cardapio .form-control:focus,
 .pagina-cardapio .form-select:focus {
     border-color: #c21e56;
     box-shadow: 0 0 0 0.2rem rgba(194, 30, 86, 0.15);
 }
 
+
 /* Cards dos doces */
+
 
 .pagina-cardapio .card {
     height: 100%;
@@ -378,29 +481,43 @@ a {
                 box-shadow 0.25s ease;
 }
 
+
 .pagina-cardapio .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 25px rgba(98, 2, 30, 0.16);
 }
 
+
 /* Imagens dos produtos */
 
-.pagina-cardapio .imagem-doce {
+
+.pagina-cardapio .imagem-doce img {
     display: block;
-    width: 100%;
-    height: 250px;
-    margin: 0;
-    border-radius: 0;
+    width: 10px;
+    height: 10px;
+    margin: 5px auto;
+    border-radius: 5px;
     object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
 }
 
+
+
+
 /* Conteúdo dos cards */
+
+.pagina-cardapio .card {
+    
+}
 
 .pagina-cardapio .card-body {
     display: flex;
     flex-direction: column;
-    padding: 22px;
+    padding: 30px;
 }
+
 
 .pagina-cardapio .etiqueta {
     align-self: flex-start;
@@ -412,6 +529,7 @@ a {
     font-weight: 500;
 }
 
+
 .pagina-cardapio .card-title {
     color: #62021e;
     font-family: 'Fredoka', sans-serif;
@@ -422,6 +540,7 @@ a {
     margin: 8px 0 12px;
 }
 
+
 .pagina-cardapio .card-text {
     color: #6d4652;
     font-family: 'Nunito', sans-serif;
@@ -429,6 +548,7 @@ a {
     line-height: 1.6;
     text-align: left;
 }
+
 
 .pagina-cardapio .preco {
     color: #c21e56;
@@ -439,7 +559,9 @@ a {
     margin: 15px 0;
 }
 
+
 /* Botões */
+
 
 .pagina-cardapio .btn-detalhes {
     background-color: #62021e;
@@ -452,18 +574,22 @@ a {
                 color 0.2s ease;
 }
 
+
 .pagina-cardapio .btn-detalhes:hover {
     background-color: #c21e56;
     border-color: #c21e56;
     color: white;
 }
 
+
 .pagina-cardapio .btn-detalhes:focus-visible {
     outline: 3px solid #8a63d2;
     outline-offset: 3px;
 }
 
+
 /* Mensagem quando não há resultados */
+
 
 .pagina-cardapio #mensagemVazia {
     color: #62021e;
@@ -471,7 +597,9 @@ a {
     font-size: 1.2rem;
 }
 
+
 /* Janela de detalhes */
+
 
 .pagina-cardapio .modal-content {
     background-color: #fff8fa;
@@ -479,15 +607,18 @@ a {
     border-radius: 24px;
 }
 
+
 .pagina-cardapio .modal-header {
     border-bottom-color: #f0c1cf;
 }
+
 
 .pagina-cardapio .modal-title {
     color: #62021e;
     font-family: 'Fredoka', sans-serif;
     font-weight: 700;
 }
+
 
 .pagina-cardapio .modal-body p {
     color: #62021e;
@@ -496,11 +627,14 @@ a {
     text-align: left;
 }
 
+
 .pagina-cardapio .modal-footer {
     border-top-color: #f0c1cf;
 }
 
+
 /* Rodapé */
+
 
 .pagina-cardapio footer {
     background-color: #3b2a2e;
@@ -509,28 +643,36 @@ a {
     padding: 30px 20px;
 }
 
+
 .pagina-cardapio footer p {
     color: #e6c5cc;
     font-family: 'Nunito', sans-serif;
     font-size: 0.9rem;
 }
 
+
 /* Ajustes para celulares */
+
 
 @media (max-width: 576px) {
     .pagina-cardapio .navbar {
         padding: 10px 14px;
     }
 
+
     .pagina-cardapio main h1 {
         font-size: 2.2rem;
     }
 
-    .pagina-cardapio .imagem-doce {
+
+    
+.pagina-cardapio .imagem-doce {
         height: 220px;
     }
-
     .pagina-cardapio .card-body {
         padding: 18px;
     }
 }
+
+
+
