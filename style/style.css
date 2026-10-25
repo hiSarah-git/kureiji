@@ -1,12 +1,9 @@
 :root {
-  --fundo: rgb(244, 218, 222);
-  --rosa: pink;
-  --rosa-forte: #c21e56;
-  --vinho: #62021e;
-  --ciano: #4dd0e1;
-  --ciano-escuro: #0e8fa0;
+  --fundo: #f4dade;       /* fundo da página */
+  --rosa: #ffc0cb;        /* barra de navegação e detalhes suaves */
+  --rosa-forte: #c21e56;  /* links, destaques e hover */
+  --vinho: #62021e;       /* textos, títulos e rodapé */
   --branco: #ffffff;
-  --escuro: #3b2a2e;
   --raio: 25px;
   --sombra: 0 6px 18px rgba(98, 2, 30, 0.12);
 }
@@ -27,26 +24,24 @@ a {
 }
 
 a:focus-visible {
-  outline: 3px solid var(--ciano-escuro);
+  outline: 3px solid var(--vinho);
   outline-offset: 3px;
 }
-
-
 
 .barranavegacao ul {
   list-style-type: none;
   margin: 0;
   padding: 0px 35px;
-  background-color: pink;
+  background-color: var(--rosa);
   display: flex;
-  flex-wrap: wrap;               
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
 .barranavegacao ul li a {
   display: block;
-  color: white;
+  color: var(--branco);
   padding: 8px 25px;
   text-decoration: none;
   font-family: 'Fredoka', sans-serif;
@@ -54,12 +49,8 @@ a:focus-visible {
 }
 
 .barranavegacao ul li a:hover {
-  background-color: var(--ciano);
+  background-color: var(--rosa-forte);
   border-radius: 30px;
-}
-
-.barranavegacao ul li a:visited {
-  color: var(--rosa-forte);
 }
 
 #logo {
@@ -68,10 +59,10 @@ a:focus-visible {
   display: block;
 }
 
-
-
 .banner {
-  background-image:linear-gradient(rgba(98, 2, 30, 0.35), rgba(98, 2, 30, 0.55)), url("../imagens/frentedaloja.jpg");
+  background-image:
+    linear-gradient(rgba(98, 2, 30, 0.35), rgba(98, 2, 30, 0.55)),
+    url("../imagens/frentedaloja.jpg");
   background-size: cover;
   background-position: center;
   min-height: 460px;
@@ -86,9 +77,11 @@ a:focus-visible {
   gap: 16px;
 }
 
+/* "Bem-vindo à Kureiji Candy" em negrito */
 .banner h1 {
   color: var(--branco);
-  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
   margin: 0;
 }
@@ -97,7 +90,6 @@ a:focus-visible {
   width: clamp(120px, 22vw, 200px);
   height: auto;
 }
-
 
 
 #abertura {
@@ -117,6 +109,12 @@ a:focus-visible {
   font-size: clamp(1.1rem, 2.5vw, 1.35rem);
   line-height: 1.5;
 }
+
+#abertura span {
+  color: var(--rosa-forte);
+  font-weight: 700;
+}
+
 
 
 #linkdeavaliacao {
@@ -145,18 +143,14 @@ a:focus-visible {
   color: var(--branco);
 }
 
-
 h2 {
-  color: black;
+  color: var(--vinho);
+  font-weight: 700;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
   text-align: left;
   max-width: 1200px;
   margin: 30px auto;
   padding: 0 16px;
-}
-span{
-  color:pink;
-
-  
 }
 
 #doces {
@@ -188,7 +182,7 @@ span{
 }
 
 #doces .card-title {
-  color: darkred;
+  color: var(--vinho);
   margin-bottom: 10px;
 }
 
@@ -212,11 +206,10 @@ span{
 }
 
 
-/* ---------- Rodapé ---------- */
 
 footer {
-  background-color: var(--escuro);
-  color: #e6c5cc;
+  background-color: var(--vinho);
+  color: var(--branco);
   padding: 50px 20px 20px;
   margin-top: 20px;
   font-family: 'Nunito', sans-serif;
@@ -237,7 +230,7 @@ footer {
 }
 
 .footer-coluna h3 {
-  color: #ff99bb;
+  color: var(--rosa);
   font-size: 1.2rem;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -248,7 +241,7 @@ footer {
 .footer-coluna ul {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #d1b2be;
+  color: rgba(255, 255, 255, 0.85);
   text-align: left;
 }
 
@@ -261,18 +254,18 @@ footer {
 .footer-coluna ul li a,
 .footer-coluna p a {
   display: block;
-  color: #d1b2be;
+  color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
   margin-bottom: 8px;
 }
 
 .footer-coluna ul li a:hover,
 .footer-coluna p a:hover {
-  color: var(--branco);
+  color: var(--rosa);
 }
 
 .copyright {
-  border-top: 1px solid rgb(236, 112, 164);
+  border-top: 1px solid rgba(255, 192, 203, 0.4);
   padding-top: 15px;
   margin-top: 30px;
   text-align: center;
@@ -281,10 +274,10 @@ footer {
 
 .copyright p {
   margin: 0;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 
-/* ---------- Celular ---------- */
 
 @media (max-width: 640px) {
   .banner {
