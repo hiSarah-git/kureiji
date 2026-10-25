@@ -18,82 +18,99 @@ h1, h2, h3, h5 {
   font-family: "Fredoka", sans-serif;
 }
 
-.barranavegacao {
-  background-color: var(--roxo);
-  padding: 15px 30px;
-}
-
 .barranavegacao ul {
-  list-style: none;  /* Remove as bolinhas da lista */
+  list-style-type: none;
   margin: 0;
-  padding: 0;
-  display: flex; /* Alinha os itens um ao lado do outro */
+  padding: 0 35px;
+  background-color: pink;
+  display: flex;
+  flex-wrap: nowrap;        
+  white-space: nowrap;     /* Impede os links de quebrarem linha */
+  overflow-x: auto;        /* Se não couber na tela, cria um scroll de lado (rolagem) */
+  
+  justify-content: space-between;
   align-items: center;
-  gap: 20px; /* Dá espaço entre os links */
 }
 
-#logo {
-  height: 50px; /* Controla o tamanho do seu logotipo */
-  width: auto;
+
 }
 
 .barranavegacao ul li a {
-  color: var(--branco);
-  text-decoration: none; /* Remove o sublinhado dos links */
-  font-weight: bold;
-  transition: color 0.2s;
+  display: block;
+  color: white;
+  padding: 8px 25px;
+  text-decoration: none;
+  font-family: "Fredoka", sans-serif;
+  font-size: 20px;
 }
 
-/* Efeito quando passa o mouse nos links do menu */
 .barranavegacao ul li a:hover {
-  color: var(--amarelo);
+  background-color: #4dd0e1;
+  border-radius: 30px;
 }
 
+#logo {
+  width: 100px;
+  display: block;
+}
 
-/*Aqui arrumamos a sobreposição dos textos. */
 .banner {
   position: relative;
-  min-height: 500px; /* Garante uma altura mínima para o topo */
+  overflow: hidden;
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-center: center;
+  text-align: center;          /* antes estava "text-center: center" (inválido) */
   padding: 60px 20px;
+  background-color: var(--roxo); /* aparece enquanto a foto carrega */
 }
 
-/* Faz o carrossel se ajustar perfeitamente ao fundo do banner */
+/* O carrossel ocupa o banner inteiro, atrás do texto */
 .banner-carrossel {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; /* Fica na camada de trás */
+  z-index: 1;
 }
 
 .banner-carrossel .carousel-inner,
-.banner-carrossel .carousel-item,
-.banner-carrossel img {
+.banner-carrossel .carousel-item {
   height: 100%;
-  object-fit: cover; /* Faz as fotos cobrirem o espaço sem distorcer */
 }
 
-/* Película escura que colocamos para conseguir ler o texto branco */
-.banner::after {
+.banner-carrossel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* a foto cobre o espaço sem distorcer */
+}
+
+/* Película escura para ler o texto branco.
+   Fica DENTRO do carrossel para as setas e bolinhas ficarem por cima dela. */
+.banner-carrossel::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(48, 29, 53, 0.5); /* Preto/Roxo com 50% de transparência */
-  z-index: 2; /* Fica no meio (em cima da foto, embaixo do texto) */
+  background-color: rgba(48, 29, 53, 0.5);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.banner-carrossel .carousel-control-prev,
+.banner-carrossel .carousel-control-next,
+.banner-carrossel .carousel-indicators {
+  z-index: 2;
 }
 
 /* Caixa que segura os textos e o botão de avaliação */
 .banner-conteudo {
   position: relative;
-  z-index: 3; /* Fica na camada da frente de todas */
+  z-index: 3;                  /* na frente de tudo */
   color: var(--branco);
   max-width: 800px;
 }
@@ -117,33 +134,34 @@ h1, h2, h3, h5 {
   color: var(--amarelo);
 }
 
-/* Estilização do seu botão de avaliação */
+/* Botão de avaliação */
 #linkdeavaliacao a {
   display: inline-block;
   background-color: var(--rosa);
   color: var(--branco);
   text-decoration: none;
   padding: 12px 30px;
-  border-radius: 50px; /* Deixa o botão arredondado e fofo */
+  border-radius: 50px;
   font-weight: bold;
   margin-top: 20px;
-  box-shadow: 0 4px 15px rgba(239, 61, 135, 0.3); /* Sombra suave rosa */
+  box-shadow: 0 4px 15px rgba(239, 61, 135, 0.3);
   transition: transform 0.2s;
 }
 
 #linkdeavaliacao a:hover {
-  transform: scale(1.05); /* Aumenta levemente de tamanho ao passar o mouse */
+  transform: scale(1.05);
   background-color: var(--amarelo);
   color: var(--roxo);
 }
 
 
-/*Destaques*/
+/* ---------- Abertura e destaques ---------- */
+
 #abertura {
   padding: 80px 20px;
   text-align: center;
   max-width: 900px;
-  margin: 0 auto; /* Centraliza a seção na tela */
+  margin: 0 auto;
 }
 
 #abertura p {
@@ -171,19 +189,26 @@ h2 {
 }
 
 
-/* CARDS DO BOOTSTRAP*/
+/* ---------- Cards do Bootstrap ---------- */
+
 .card {
-  border: none !important; /* Remove as bordas feias padrões */
-  border-radius: 20px !important; /* Deixa os cantos arredondados */
-  box-shadow: 0 10px 30px rgba(48, 29, 53, 0.05); /* Cria uma sombra profissional */
-  overflow: hidden; /* Garante que a imagem respeite a curva do card */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Prepara a animação */
+  border: none !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(48, 29, 53, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efeito incrível de flutuar ao passar o mouse nos doces */
 .card:hover {
-  transform: translateY(-10px); /* O card sobe 10 pixels */
-  box-shadow: 0 15px 35px rgba(48, 29, 53, 0.15); /* A sombra fica mais intensa */
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(48, 29, 53, 0.15);
+}
+
+/* Fotos dos destaques como antes: mesma altura, preenchendo sem deformar */
+#doces .card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .card-title {
@@ -207,6 +232,7 @@ h2 {
 }
 
 
+/* ---------- Rodapé ---------- */
 
 footer {
   background-color: var(--roxo);
@@ -218,14 +244,14 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap; /* Faz quebrar de linha no celular */
+  flex-wrap: wrap;
   gap: 40px;
   justify-content: space-between;
 }
 
 .footer-coluna {
   flex: 1;
-  min-width: 200px; /* Impede que fiquem muito espremidas */
+  min-width: 200px;
 }
 
 .footer-coluna h3 {
@@ -244,14 +270,16 @@ footer {
   margin-bottom: 10px;
 }
 
-.footer-coluna ul li a, .footer-coluna p a {
+.footer-coluna ul li a,
+.footer-coluna p a {
   color: var(--branco);
   text-decoration: none;
   opacity: 0.8;
   transition: opacity 0.2s, color 0.2s;
 }
 
-.footer-coluna ul li a:hover, .footer-coluna p a:hover {
+.footer-coluna ul li a:hover,
+.footer-coluna p a:hover {
   opacity: 1;
   color: var(--amarelo);
 }
@@ -260,6 +288,6 @@ footer {
   text-align: center;
   margin-top: 50px;
   padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória fina */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 14px;
 }
