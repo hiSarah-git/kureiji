@@ -1,22 +1,42 @@
+/* ==========================================================
+   Kureiji Candy — style.css
+   Feito para o index.html enviado (com Bootstrap 5.3.8).
+   Para mudar as cores do site, edite só as variáveis abaixo.
+   ========================================================== */
+
 :root {
-  --rosa: #ef3d87;       /* Cor dos links e destaques */
-  --amarelo: #ffc72f;    /* Cor dos botões e etiquetas principais */
-  --roxo: #301d35;       /* Cor dos textos e do rodapé (cor de café escuro) */
-  --creme: #fffaf4;      /* Cor de fundo do site (traz conforto visual) */
-  --branco: #ffffff;     /* Cor interna dos cards */
-  --cinza: #796f78;      /* Cor dos parágrafos menores */
+  --fundo: rgb(244, 218, 222);
+  --rosa: pink;
+  --rosa-forte: #c21e56;
+  --vinho: #62021e;
+  --ciano: #4dd0e1;
+  --ciano-escuro: #0e8fa0;
+  --branco: #ffffff;
+  --escuro: #3b2a2e;
+  --raio: 25px;
+  --sombra: 0 6px 18px rgba(98, 2, 30, 0.12);
 }
 
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif;
-  color: var(--roxo);
-  background-color: var(--creme);
+  background: var(--fundo);
+  font-family: 'Nunito', sans-serif;
+  color: var(--vinho);
 }
 
-h1, h2, h3, h5 {
-  font-family: "Fredoka", sans-serif;
+h1, h2, h3, h4, h5 {
+  font-family: 'Fredoka', sans-serif;
 }
+
+a {
+  color: var(--rosa-forte);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--ciano-escuro);
+  outline-offset: 3px;
+}
+
 
 
 .barranavegacao ul {
@@ -25,13 +45,10 @@ h1, h2, h3, h5 {
   padding: 0px 35px;
   background-color: pink;
   display: flex;
-    flex-wrap: nowrap;       /* IMPEDE que os itens quebrem para baixo */
-  overflow-x: auto;        /* Ativa o SCROLL (rolagem de lado) se faltar espaço */
-  white-space: nowrap;     /* Garante que o texto dos links fique em linha única */
-  
-  /* AJUSTE DE ALINHAMENTO: */
-  justify-content: flex-start; /* Alinha os itens no começo da linha para o scroll funcionar melhor */
+  flex-wrap: wrap;               /* só atua em tela estreita */
+  justify-content: space-between;
   align-items: center;
+}
 
 .barranavegacao ul li a {
   display: block;
@@ -43,219 +60,195 @@ h1, h2, h3, h5 {
 }
 
 .barranavegacao ul li a:hover {
-  background-color: #4dd0e1;
+  background-color: var(--ciano);
   border-radius: 30px;
+}
+
+.barranavegacao ul li a:visited {
+  color: var(--rosa-forte);
 }
 
 #logo {
   width: 100px;
+  text-align: left;
   display: block;
 }
 
+
+
 .banner {
-  position: relative;
-  overflow: hidden;
-  min-height: 500px;
+  background-image:linear-gradient(rgba(98, 2, 30, 0.35), rgba(98, 2, 30, 0.55)), url("../imagens/frentedaloja.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 460px;
+  height: 650px;
+  max-height: 80vh;
+  padding: 24px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;          /* antes estava "text-center: center" (inválido) */
-  padding: 60px 20px;
-  background-color: var(--roxo); /* aparece enquanto a foto carrega */
+  align-items: center;
+  text-align: center;
+  gap: 16px;
 }
 
-/* O carrossel ocupa o banner inteiro, atrás do texto */
-.banner-carrossel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-.banner-carrossel .carousel-inner,
-.banner-carrossel .carousel-item {
-  height: 100%;
-}
-
-.banner-carrossel .carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;           /* a foto cobre o espaço sem distorcer */
-}
-
-/* Película escura para ler o texto branco.
-   Fica DENTRO do carrossel para as setas e bolinhas ficarem por cima dela. */
-.banner-carrossel::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(48, 29, 53, 0.5);
-  z-index: 1;
-  pointer-events: none;
-}
-
-.banner-carrossel .carousel-control-prev,
-.banner-carrossel .carousel-control-next,
-.banner-carrossel .carousel-indicators {
-  z-index: 2;
-}
-
-/* Caixa que segura os textos e o botão de avaliação */
-.banner-conteudo {
-  position: relative;
-  z-index: 3;                  /* na frente de tudo */
+.banner h1 {
   color: var(--branco);
-  max-width: 800px;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+  margin: 0;
 }
 
-.banner-etiqueta {
-  display: inline-block;
-  color: var(--amarelo);
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.banner-conteudo h1 {
-  font-size: 48px;
-  font-weight: 700;
-}
-
-.banner-conteudo h1 strong {
-  color: var(--amarelo);
-}
-
-/* Botão de avaliação */
-#linkdeavaliacao a {
-  display: inline-block;
-  background-color: var(--rosa);
-  color: var(--branco);
-  text-decoration: none;
-  padding: 12px 30px;
-  border-radius: 50px;
-  font-weight: bold;
-  margin-top: 20px;
-  box-shadow: 0 4px 15px rgba(239, 61, 135, 0.3);
-  transition: transform 0.2s;
-}
-
-#linkdeavaliacao a:hover {
-  transform: scale(1.05);
-  background-color: var(--amarelo);
-  color: var(--roxo);
+.banner img {
+  width: clamp(120px, 22vw, 200px);
+  height: auto;
 }
 
 
-/* ---------- Abertura e destaques ---------- */
 
 #abertura {
-  padding: 80px 20px;
+  background-color: var(--branco);
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 24px;
   text-align: center;
-  max-width: 900px;
-  margin: 0 auto;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
 }
 
 #abertura p {
-  font-size: 20px;
-  line-height: 1.6;
-  color: var(--cinza);
+  margin: 0;
+  color: var(--vinho);
+  font-family: 'Fredoka', sans-serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  line-height: 1.5;
 }
 
-#abertura p span {
-  color: var(--rosa);
-  font-weight: bold;
+
+#linkdeavaliacao {
+  text-align: center;
+  margin: 24px 16px;
 }
+
+#linkdeavaliacao a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--vinho);
+  border: 2px solid var(--vinho);
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#linkdeavaliacao a:hover,
+#linkdeavaliacao a:active {
+  background-color: var(--vinho);
+  border-radius: 30px;
+  color: var(--branco);
+}
+
 
 h2 {
+  color: var(--vinho);
   text-align: center;
-  font-size: 36px;
-  margin-bottom: 40px;
-  color: var(--roxo);
+  margin: 30px 16px;
 }
 
 #doces {
-  padding: 0 20px 80px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 16px 40px;
 }
 
-
-/* ---------- Cards do Bootstrap ---------- */
-
-.card {
-  border: none !important;
-  border-radius: 20px !important;
-  box-shadow: 0 10px 30px rgba(48, 29, 53, 0.05);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+#doces .card {
+  background-color: var(--branco);
+  border: none;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  padding: 15px;
+  text-align: center;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(48, 29, 53, 0.15);
-}
-
-/* Fotos dos destaques como antes: mesma altura, preenchendo sem deformar */
 #doces .card-img-top {
   width: 100%;
-  height: 200px;
+  height: 160px;
+  border-radius: var(--raio);
   object-fit: cover;
 }
 
-.card-title {
-  color: var(--roxo);
-  font-weight: 700;
+#doces .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 0;
 }
 
-.card-text {
-  color: var(--cinza);
-  font-size: 15px;
+#doces .card-title {
+  color: darkred;
+  margin-bottom: 10px;
+}
+
+#doces .card-text {
+  color: var(--vinho);
+  margin-bottom: 12px;
+}
+
+#doces .link-dragao {
+  margin-top: auto;
 }
 
 .link-dragao a {
-  color: var(--rosa);
-  text-decoration: none;
+  color: var(--rosa-forte);
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .link-dragao a:hover {
-  color: var(--roxo);
+  color: var(--vinho);
 }
 
 
 /* ---------- Rodapé ---------- */
 
 footer {
-  background-color: var(--roxo);
-  color: var(--branco);
-  padding: 60px 20px 20px;
+  background-color: var(--escuro);
+  color: #e6c5cc;
+  padding: 50px 20px 20px;
+  margin-top: 20px;
+  font-family: 'Nunito', sans-serif;
 }
 
 .footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
   gap: 40px;
-  justify-content: space-between;
 }
 
 .footer-coluna {
   flex: 1;
-  min-width: 200px;
+  min-width: 250px;
 }
 
 .footer-coluna h3 {
-  color: var(--amarelo);
+  color: #ff99bb;
+  font-size: 1.2rem;
   margin-bottom: 20px;
-  font-size: 20px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.footer-coluna p,
+.footer-coluna ul {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #d1b2be;
+  text-align: left;
 }
 
 .footer-coluna ul {
@@ -264,28 +257,44 @@ footer {
   margin: 0;
 }
 
-.footer-coluna ul li {
-  margin-bottom: 10px;
-}
-
 .footer-coluna ul li a,
 .footer-coluna p a {
-  color: var(--branco);
+  display: block;
+  color: #d1b2be;
   text-decoration: none;
-  opacity: 0.8;
-  transition: opacity 0.2s, color 0.2s;
+  margin-bottom: 8px;
 }
 
 .footer-coluna ul li a:hover,
 .footer-coluna p a:hover {
-  opacity: 1;
-  color: var(--amarelo);
+  color: var(--branco);
 }
 
 .copyright {
+  border-top: 1px solid rgb(236, 112, 164);
+  padding-top: 15px;
+  margin-top: 30px;
   text-align: center;
-  margin-top: 50px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 14px;
+  font-size: 0.9rem;
+}
+
+.copyright p {
+  margin: 0;
+}
+
+
+/* ---------- Celular ---------- */
+
+@media (max-width: 640px) {
+  .banner {
+    min-height: 380px;
+  }
+
+  .footer-coluna h3,
+  .footer-coluna p,
+  .footer-coluna ul,
+  .footer-coluna ul li a,
+  .footer-coluna p a {
+    text-align: center;
+  }
 }
