@@ -24,33 +24,38 @@
   </nav>
 
   <header class="banner">
-    
-    <div id="carouselExampleInterval" class="carousel slide banner-carrossel" data-bs-autoplay="true">
-      <div class="carousel-inner rounded-5">
+
+    <!-- Carrossel ao fundo do banner -->
+    <div id="carouselExampleInterval" class="carousel slide banner-carrossel" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="2000">
-          <img src="imagens/logo_kureiji_transparente.png" class="d-block w-100" alt="Logo da kurenji Candy">
+          <img src="imagens/logo_kureiji_transparente.png" alt="Logo da Kureiji Candy">
         </div>
         <div class="carousel-item" data-bs-interval="4000">
-          <img src="imagens/foto.jpg" class="d-block w-100" alt="sorvete na casca da fruta">
+          <img src="imagens/foto.jpg" alt="Sorvete na casca da fruta">
         </div>
         <div class="carousel-item" data-bs-interval="6000">
-          <img src="imagens/Soprododragao.png" class="d-block w-100" alt="Sopro do dragão do cardápio">
+          <img src="imagens/Soprododragao.png" alt="Sopro do Dragão do cardápio">
         </div>
       </div>
-      
-      <div class="d-flex justify-content-between align-items-center mt-3">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <button class="btn-icon btn-sm carousel-control-play-pause" type="button" data-bs-target="#carouselExampleInterval" aria-label="Pause" data-bs-pause-label="Pause" data-bs-play-label="Play">
-          <span class="carousel-icon-pause" aria-hidden="true"></span>
-          <span class="carousel-icon-play" aria-hidden="true"></span>
-        </button>
-      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
     </div>
 
+    <!-- Textos por cima do carrossel -->
     <div class="banner-conteudo">
       <span class="banner-etiqueta">Cafeteria temática em São Paulo</span>
       <h1>Bem-vindo à <br><strong>Kureiji Candy</strong></h1>
@@ -61,7 +66,7 @@
 
   </header>
 
-
+  <main>
     <section id="abertura">
       <p>A Kureiji Candy é uma cafeteria onde cada receita combina criatividade e cultura oriental para criar momentos que vão <span>muito além do sabor</span>. Venha saborear nossos bolos, doces e cafés especiais!</p>
     </section>
@@ -88,7 +93,7 @@
           <div class="card h-100">
             <img src="imagens/TayakiPanda.png" class="card-img-top" alt="Massa assada em formato de ursinhos recheados">
             <div class="card-body">
-              <h3 class="card-title">Tayaki de Panda</h3>
+              <h5 class="card-title">Tayaki de Panda</h5>
               <p class="card-text">Pequenos doces em formato de ursinho, preparados para trazer uma dose de fofura e diversão a cada mordida.</p>
             </div>
           </div>
@@ -98,7 +103,7 @@
           <div class="card h-100">
             <img src="imagens/frutaluffy.png" class="card-img-top" alt="Brigadeiro no formato da Gomu Gomu no Mi">
             <div class="card-body">
-              <h3 class="card-title">Gomu Gomu no Mi</h3>
+              <h5 class="card-title">Gomu Gomu no Mi</h5>
               <p class="card-text">Você é fã de One Piece? Então não pode perder essas delícias! Temos um brigadeiro incrível inspirado na Gomu Gomu no Mi, a fruta do Luffy.</p>
             </div>
           </div>
@@ -108,7 +113,7 @@
           <div class="card h-100">
             <img src="imagens/fruta.jpg" class="card-img-top" alt="Sorvete servido na casca da fruta">
             <div class="card-body">
-              <h3 class="card-title">Sorvete na Fruta</h3>
+              <h5 class="card-title">Sorvete na Fruta</h5>
               <p class="card-text">Sabores tropicais e refrescantes servidos de um jeito totalmente único. Nossos gelatos artesanais são preparados e apresentados dentro da casca de frutas.</p>
               <div class="link-dragao">
                 <a href="https://www.instagram.com/reel/DdrtJ87J-g4/" target="_blank" rel="noopener noreferrer">Confira essa experiência</a>
@@ -158,6 +163,7 @@
     </div>
   </footer>
 
-  <script src="https://jsdelivr.net"></script>
+  <!-- JavaScript do Bootstrap: necessário para o carrossel funcionar -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
