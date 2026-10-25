@@ -18,29 +18,27 @@ h1, h2, h3, h5 {
   font-family: "Fredoka", sans-serif;
 }
 
+
 .barranavegacao ul {
   list-style-type: none;
   margin: 0;
-  padding: 0 35px;
+  padding: 0px 35px;
   background-color: pink;
   display: flex;
-  flex-wrap: nowrap;        
-  white-space: nowrap;     /* Impede os links de quebrarem linha */
-  overflow-x: auto;        /* Se não couber na tela, cria um scroll de lado (rolagem) */
+    flex-wrap: nowrap;       /* IMPEDE que os itens quebrem para baixo */
+  overflow-x: auto;        /* Ativa o SCROLL (rolagem de lado) se faltar espaço */
+  white-space: nowrap;     /* Garante que o texto dos links fique em linha única */
   
-  justify-content: space-between;
+  /* AJUSTE DE ALINHAMENTO: */
+  justify-content: flex-start; /* Alinha os itens no começo da linha para o scroll funcionar melhor */
   align-items: center;
-}
-
-
-}
 
 .barranavegacao ul li a {
   display: block;
   color: white;
   padding: 8px 25px;
   text-decoration: none;
-  font-family: "Fredoka", sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 20px;
 }
 
