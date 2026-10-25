@@ -1,152 +1,133 @@
-<html>
-    <head>
-        <title>Kureiji Candy</title>
-        <meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"/>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-		
-		<link rel="stylesheet" href="style/style.css"/>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kureiji Candy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
 
- <div class="barranavegacao">
-        <ul>
-            <li><img src="imagens/logo_kureiji_transparente.png" id="logo"></li>
-            <li><a href="#">Início</a></li>
-            <li><a href="paginas/Cardapio.html">Cardápio</a></li>
-            <li><a href="paginas/Sobre_nos.html">Sobre nós</a></li>
-            <li><a href="paginas/Contato_e_endereco.html">Contato e endereço</a></li>
-        </ul>
+  <nav class="barranavegacao">
+    <ul>
+      <li><img src="imagens/logo_kureiji_transparente.png" id="logo" alt="Logo da Kureiji Candy"></li>
+      <li><a href="#">Início</a></li>
+      <li><a href="paginas/Cardapio.html">Cardápio</a></li>
+      <li><a href="paginas/Sobre_nos.html">Sobre nós</a></li>
+      <li><a href="paginas/Contato_e_endereco.html">Contato e endereço</a></li>
+    </ul>
+  </nav>
+
+  <header class="banner">
+    <h1>Bem-vindo à</h1>
+    <img src="imagens/logo_kureiji_borda.png" alt="Kureiji Candy">
+  </header>
+
+  <main>
+    <section id="abertura">
+      <p>A Kureiji Candy é uma cafeteria onde cada receita combina criatividade e cultura oriental para criar momentos que vão muito além do sabor. Venha saborear nossos bolos, doces e cafés especiais!</p>
+    </section>
+
+    <div id="linkdeavaliacao">
+      <a href="https://www.google.com/searchviewer/10?svid=CAwSHRIbCgNwdnESFENnMHZaeTh4TVhjNE4yZDROemh0GAo#sv=CAESzQEKuQEStgEKd0FKaVQ0dEpiQ2NIZTVLNjdRRmR3WWxGWDhvWkFvN0ZQY0ZIQTJMdDBnSTZBS1ZlaFg5cEJMYlM5ZWhqYUhlYTI2dU9sWmw5M1E2SUVReEtOMV9NdVRqSEtNaUlISWwtNXNPa0JBWE9lbzNvRFBmQ3pBeFZ0SktjEhdIQ21YYXJfMkFzN2Qxc1FQcTliYy1ROBoiQURzcjlmUmJsSTdaYjNIQ1pNMFBTa2oyQUNOWDBJeWI1dxIEODA1MRoBMyoAMAA4AUAAGAAgjtG_igpKAhAC" target="_blank" rel="noopener noreferrer">Avalie nossa loja</a>
     </div>
 
+    <h2>Destaques</h2>
 
-	<div class="banner">
-		<h1>Bem vindo a</h1>
-		<img src="imagens/logo_kureiji_borda.png"/>
-	</div>
+    <section id="doces">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
 
-
-        <br/>
-	
-	<div id="linkdeavaliacao">
-		<a href="https://www.google.com/searchviewer/10?svid=CAwSHRIbCgNwdnESFENnMHZaeTh4TVhjNE4yZDROemh0GAo#sv=CAESzQEKuQEStgEKd0FKaVQ0dEpiQ2NIZTVLNjdRRmR3WWxGWDhvWkFvN0ZQY0ZIQTJMdDBnSTZBS1ZlaFg5cEJMYlM5ZWhqYUhlYTI2dU9sWmw5M1E2SUVReEtOMV9NdVRqSEtNaUlISWwtNXNPa0JBWE9lbzNvRFBmQ3pBeFZ0SktjEhdIQ21YYXJfMkFzN2Qxc1FQcTliYy1ROBoiQURzcjlmUmJsSTdaYjNIQ1pNMFBTa2oyQUNOWDBJeWI1dxIEODA1MRoBMyoAMAA4AUAAGAAgjtG_igpKAhAC" target="_blank"></a>
-        <button type="button" class="btn-solid theme-inverse">Avalie nossa loja</button>
-</br>
-
-<div id="abertura">
-	<h1>A Kureiji Candy é uma cafeteria onde cada receita combina criatividade e cultura oriental para criar momentos que vão muito além do sabor. Venha saborear nossos bolos, doces e cafés especiais! </h1>
-</div>
-	<h2> Destaques </h2>
-	<div id="doces">
-	<div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-  <div class="card">
-  <img src="imagens/Soprododragao.png"  class="card-img-top" alt="suspiris saindo fumaça">
-  <div class="card-body">
-  <h5 class="card-title">Sopro do Dragão</h5>
-  <p class="card-text">Suspiros ou pipocas doces (versão vegana), congeladas com nitrogênio líquido. Ao mastigar, solta fumaça pela boca e nariz! É doce, é show, é viral.</p>
-  <div class="link-dragao" >
-	<a href="https://www.instagram.com/reel/DWXeiYFj6IG/"> Confira essa experiência</a>
-	</div>
-	</div>
-  </div>
-  </div>
-  </div>
-    	
-	<div class="row row-cols-1 row-cols-md-3 g-4">
-   <div ="col">
-   <diclassv class="card">
-   <img src="imagens/TayakiPanda.png" alt="massa assada em formato de ursinhos recheados">
-   <div class="card-body">
-   <h5 class="card-title">Tayaki de Panda</h5>
-   <p class="card-text">Pequenos doces em formato de ursinho, preparados para trazer uma dose de fofura e diversão a cada mordida.</p>
-  
-
- </div>
- </div>
- </div>
-
-    	<div class="row row-cols-1 row-cols-md-3 g-4">
-   <div ="col">
-   <diclassv class="card">
-   <img src="imagens/frutaluffy.png" alt="Brigadeiro no formato da gomu gomu no mi">
-   <div class="card-body">
-   <h5 class="card-title">Gomu Gomu no Mi</h5>
-   <p class="card-text">Você é fã de One Piece? Então não pode perder essas delícias!Temos um brigadeiro incrível inspirado na Gomu Gomu no Mi, a fruta do Luffy</p>
-  
- </div>
- </div>
- </div>
-
-    	<div class="row row-cols-1 row-cols-md-3 g-4">
-   <div ="col">
-   <diclassv class="card">
-   <img src="imagens/TayakiPanda.png" alt=sorvete na  casca dafruta">
-   <div class="card-body">
-   <h5 class="card-title">Sorvete na Fruta</h5>
-   <p class="card-text">Sabores tropicais e refrescantes servidos de um jeito totalmente único. Nossos gelatos artesanais são preparados e apresentados dentro da casca de frutas </p>
-     <div class="link-dragao" >
-	   <a href="https://www.instagram.com/reel/DdrtJ87J-g4/"> Confira essa experiência</a>
-	</div>
-  </div>
- </div>
- </div>
-
-	<footer>
-        <div class="footer-content">
-
-
-            <div class="footer-coluna">
-                <h3>Kureiji Candy</h3>
-                <p>Doces artesanais feitos com amor e ingredientes selecionados. Cada mordida é uma experiência
-                    especial.</p>
+        <div class="col">
+          <div class="card h-100">
+            <img src="imagens/Soprododragao.png" class="card-img-top" alt="Suspiros soltando fumaça">
+            <div class="card-body">
+              <h5 class="card-title">Sopro do Dragão</h5>
+              <p class="card-text">Suspiros ou pipocas doces (versão vegana), congeladas com nitrogênio líquido. Ao mastigar, solta fumaça pela boca e nariz! É doce, é show, é viral.</p>
+              <div class="link-dragao">
+                <a href="https://www.instagram.com/reel/DWXeiYFj6IG/" target="_blank" rel="noopener noreferrer">Confira essa experiência</a>
+              </div>
             </div>
-
-
-            <div class="footer-coluna">
-                <h3>Navegação</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="Sobre_nos.html">Sobre Nós</a></li>
-                    <li><a href="Cardapio.html">Cardápio</a></li>
-                    <li><a href="Contato_e_endereco.html">Endereço</a></li>
-                </ul>
-            </div>
-
-
-            <div class="footer-coluna">
-                <h3>Contato</h3>
-                <a href="https://www.instagram.com/kureijicandy/" target="_blank"
-                    rel="noopener noreferrer">@kureijicandy</a>
-                <p>📍São Paulo, SP</p>
-                <p>🕒Seg–Sáb: 9h às 18h</p>
-            </div>
-
-
-            <div class="footer-coluna">
-                <h3>Desenvolvedoras</h3>
-                <p>Site desenvolvido GSTM System On.</p>
-            </div>
-           
+          </div>
         </div>
 
-
-        <div class="copyright">
-            <p>&copy; 2024 Kureiji Candy — Todos os direitos reservados</p>
+        <div class="col">
+          <div class="card h-100">
+            <img src="imagens/TayakiPanda.png" class="card-img-top" alt="Massa assada em formato de ursinhos recheados">
+            <div class="card-body">
+              <h5 class="card-title">Tayaki de Panda</h5>
+              <p class="card-text">Pequenos doces em formato de ursinho, preparados para trazer uma dose de fofura e diversão a cada mordida.</p>
+            </div>
+          </div>
         </div>
 
+        <div class="col">
+          <div class="card h-100">
+            <img src="imagens/frutaluffy.png" class="card-img-top" alt="Brigadeiro no formato da Gomu Gomu no Mi">
+            <div class="card-body">
+              <h5 class="card-title">Gomu Gomu no Mi</h5>
+              <p class="card-text">Você é fã de One Piece? Então não pode perder essas delícias! Temos um brigadeiro incrível inspirado na Gomu Gomu no Mi, a fruta do Luffy.</p>
+            </div>
+          </div>
+        </div>
 
-    </footer>
+        <div class="col">
+          <div class="card h-100">
+            <img src="imagens/TayakiPanda.png" class="card-img-top" alt="Sorvete servido na casca da fruta">
+            <div class="card-body">
+              <h5 class="card-title">Sorvete na Fruta</h5>
+              <p class="card-text">Sabores tropicais e refrescantes servidos de um jeito totalmente único. Nossos gelatos artesanais são preparados e apresentados dentro da casca de frutas.</p>
+              <div class="link-dragao">
+                <a href="https://www.instagram.com/reel/DdrtJ87J-g4/" target="_blank" rel="noopener noreferrer">Confira essa experiência</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
+      </div>
+    </section>
+  </main>
 
-    </body>
+  <footer>
+    <div class="footer-content">
+
+      <div class="footer-coluna">
+        <h3>Kureiji Candy</h3>
+        <p>Doces artesanais feitos com amor e ingredientes selecionados. Cada mordida é uma experiência especial.</p>
+      </div>
+
+      <div class="footer-coluna">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="paginas/Cardapio.html">Cardápio</a></li>
+          <li><a href="paginas/Sobre_nos.html">Sobre nós</a></li>
+          <li><a href="paginas/Contato_e_endereco.html">Contato e endereço</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-coluna">
+        <h3>Contato</h3>
+        <p><a href="https://www.instagram.com/kureijicandy/" target="_blank" rel="noopener noreferrer">@kureijicandy</a></p>
+        <p>📍 São Paulo, SP</p>
+        <p>🕒 Seg–Sáb: 9h às 18h</p>
+      </div>
+
+      <div class="footer-coluna">
+        <h3>Desenvolvedoras</h3>
+        <p>Site desenvolvido por GSTM System On.</p>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2026 Kureiji Candy — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+</body>
 </html>
-
