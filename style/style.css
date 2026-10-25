@@ -1,325 +1,283 @@
-
+/* ==========================================
+   1. SISTEMA DE CORES (VARIÁVEIS)
+   Aqui definimos a paleta oficial da loja.
+   ========================================== */
 :root {
-  --rosa: #ffc0cb;
-  --rosa-forte: #c21e56;
-  --vinho: #62021e;
-  --ciano: #4dd0e1;
-  --ciano-escuro: #0e8fa0;
-  --branco: #ffffff;
-  --escuro: #3b2a2e;
-  --raio: 24px;
-  --sombra: 0 6px 18px rgba(98, 2, 30, 0.12);
+  --rosa: #ef3d87;       /* Cor dos links e destaques */
+  --amarelo: #ffc72f;    /* Cor dos botões e etiquetas principais */
+  --roxo: #301d35;       /* Cor dos textos e do rodapé (cor de café escuro) */
+  --creme: #fffaf4;      /* Cor de fundo do site (traz conforto visual) */
+  --branco: #ffffff;     /* Cor interna dos cards */
+  --cinza: #796f78;      /* Cor dos parágrafos menores */
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
+/* Configurações básicas do corpo do site */
 body {
-  background: var(--rosa-fundo);
-  font-family: 'Nunito', 'Nunito Sans', sans-serif;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: var(--vinho);
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  color: var(--roxo);
+  background-color: var(--creme);
 }
 
-img {
-  max-width: 100%;
-  display: block;
+/* Define a fonte Fredoka para todos os títulos */
+h1, h2, h3, h5 {
+  font-family: "Fredoka", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Fredoka', sans-serif;
-  line-height: 1.2;
+/* ==========================================
+   2. BARRA DE NAVEGAÇÃO (MENU)
+   ========================================== */
+.barranavegacao {
+  background-color: var(--roxo);
+  padding: 15px 30px;
 }
-
-a {
-  color: var(--rosa-forte);
-}
-
-a:focus-visible,
-button:focus-visible {
-  outline: 3px solid var(--ciano-escuro);
-  outline-offset: 3px;
-  border-radius: 8px;
-}
-
 
 .barranavegacao ul {
-  list-style-type: none;
+  list-style: none; /* Remove as bolinhas da lista */
   margin: 0;
-  padding: 0 35px;
-  background-color: pink;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  padding: 0;
+  display: flex; /* Alinha os itens um ao lado do outro */
   align-items: center;
-}
-
-.barranavegacao ul li a {
-  display: block;
-  color: white;
-  padding: 8px 25px;
-  text-decoration: none;
-  font-family: 'Fredoka', sans-serif;
-  font-size: 20px;
-}
-
-.barranavegacao ul li a:hover {
-  background-color: #4dd0e1;
-  border-radius: 30px;
+  gap: 20px; /* Dá espaço entre os links */
 }
 
 #logo {
-  width: 100px;
-  text-align: left;
-  display: block;
+  height: 50px; /* Controla o tamanho do seu logotipo */
+  width: auto;
+}
+
+.barranavegacao ul li a {
+  color: var(--branco);
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+/* Efeito quando passa o mouse nos links do menu */
+.barranavegacao ul li a:hover {
+  color: var(--amarelo);
 }
 
 
+/* ==========================================
+   3. O TOPO (BANNER E CARROSSEL)
+   Aqui arrumamos a sobreposição dos textos.
+   ========================================== */
 .banner {
   position: relative;
-  background-image:url("../imagens/frentedaloja.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 460px;
-  height: 70vh;
-  max-height: 650px;
-  padding: 24px;
+  min-height: 500px; /* Garante uma altura mínima para o topo */
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  gap: 16px;
+  justify-content: center;
+  text-center: center;
+  padding: 60px 20px;
 }
 
-.banner img {
-  width: clamp(120px, 22vw, 200px);
-  height: auto;
-}
-
-.banner h1 {
-  color: var(--branco);
-  font-size: clamp(1.8rem, 5vw, 3.2rem);
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
-}
-
-
-#abertura {
-  background-color: var(--branco);
-  max-width: 800px;
-  margin: -40px auto 20px;
-  position: relative;
-  padding: 28px 24px;
-  text-align: center;
-  border-radius: var(--raio);
-  box-shadow: var(--sombra);
-}
-
-#abertura p {
-  color: var(--vinho);
-  font-family: 'Fredoka', sans-serif;
-  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-  line-height: 1.5;
-  margin: 0;
-  text-aling:justify;
-}
-
-h2 {
-  color: var(--vinho);
-  text-aling:justify;
-  font-size: clamp(1.6rem, 4vw, 2.2rem);
-  margin: 40px 16px 24px;
-}
-
-#doces {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-#doces .card {
-  background-color: var(--branco);
-  border: none;
-  border-radius: var(--raio);
-  box-shadow: var(--sombra);
-  overflow: hidden;
-  text-align: center;
-}
-
-#doces .card-img-top {
-  height: 200px;
+/* Faz o carrossel se ajustar perfeitamente ao fundo do banner */
+.banner-carrossel {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  z-index: 1; /* Fica na camada de trás */
 }
 
-#doces .card-body {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+.banner-carrossel .carousel-inner,
+.banner-carrossel .carousel-item,
+.banner-carrossel img {
+  height: 100%;
+  object-fit: cover; /* Faz as fotos cobrirem o espaço sem distorcer */
 }
 
-#doces .card-title {
-  color: darkred;
-  font-size: 1.3rem;
+/* Película escura que colocamos para conseguir ler o texto branco */
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(48, 29, 53, 0.5); /* Preto/Roxo com 50% de transparência */
+  z-index: 2; /* Fica no meio (em cima da foto, embaixo do texto) */
+}
+
+/* Caixa que segura os textos e o botão de avaliação */
+.banner-conteudo {
+  position: relative;
+  z-index: 3; /* Fica na camada da frente de todas */
+  color: var(--branco);
+  max-width: 800px;
+}
+
+.banner-etiqueta {
+  display: inline-block;
+  color: var(--amarelo);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
-#doces .card-text {
-  color: var(--vinho);
-  margin-bottom: 12px;
-}
-
-#doces .link-dragao {
-  margin-top: auto;
-}
-
-#doces a {
-  color: var(--rosa-forte);
+.banner-conteudo h1 {
+  font-size: 48px;
   font-weight: 700;
 }
 
-
-.link-dragao {
-  color: maroon;
-  font-weight: bold;
-  text-decoration: underline;
+.banner-conteudo h1 strong {
+  color: var(--amarelo);
 }
 
-#linkdeavaliacao {
-  text-align: center;
-  margin: 32px 16px;
-}
-
-#linkdeavaliacao a[target="_blank"] {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--vinho);
-  background-color: #A52A2A ;
-  border: 2px solid var(--vinho);
-  border-radius: 30px;
-  padding: 12px 28px;
-  font-family: 'Fredoka', sans-serif;
-  font-size: 1.1rem;
-  text-decoration: none;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-#linkdeavaliacao a:hover,
-#linkdeavaliacao a:active {
-  background-color: var(--vinho);
-  color: var(--branco);
-}
-
-
-#rodape {
+/* Estilização do seu botão de avaliação */
+#linkdeavaliacao a {
+  display: inline-block;
   background-color: var(--rosa);
-  padding: 30px 20px;
-  text-align: center;
-  margin-top: 40px;
+  color: var(--branco);
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 50px; /* Deixa o botão arredondado e fofo */
+  font-weight: bold;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(239, 61, 135, 0.3); /* Sombra suave rosa */
+  transition: transform 0.2s;
 }
 
+#linkdeavaliacao a:hover {
+  transform: scale(1.05); /* Aumenta levemente de tamanho ao passar o mouse */
+  background-color: var(--amarelo);
+  color: var(--roxo);
+}
+
+
+/* ==========================================
+   4. SEÇÕES DO CONTEÚDO (ABERTURA E DESTAQUES)
+   ========================================== */
+#abertura {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto; /* Centraliza a seção na tela */
+}
+
+#abertura p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--cinza);
+}
+
+#abertura p span {
+  color: var(--rosa);
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: var(--roxo);
+}
+
+#doces {
+  padding: 0 20px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* ==========================================
+   5. CUSTOMIZAÇÃO DOS CARDS DO BOOTSTRAP
+   ========================================== */
+.card {
+  border: none !important; /* Remove as bordas feias padrões */
+  border-radius: 20px !important; /* Deixa os cantos arredondados */
+  box-shadow: 0 10px 30px rgba(48, 29, 53, 0.05); /* Cria uma sombra profissional */
+  overflow: hidden; /* Garante que a imagem respeite a curva do card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Prepara a animação */
+}
+
+/* Efeito incrível de flutuar ao passar o mouse nos doces */
+.card:hover {
+  transform: translateY(-10px); /* O card sobe 10 pixels */
+  box-shadow: 0 15px 35px rgba(48, 29, 53, 0.15); /* A sombra fica mais intensa */
+}
+
+.card-title {
+  color: var(--roxo);
+  font-weight: 700;
+}
+
+.card-text {
+  color: var(--cinza);
+  font-size: 15px;
+}
+
+.link-dragao a {
+  color: var(--rosa);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-dragao a:hover {
+  color: var(--roxo);
+}
+
+
+/* ==========================================
+   6. RODAPÉ (FOOTER)
+   ========================================== */
 footer {
-  background-color: var(--escuro);
-  color: #e6c5cc;
-  padding: 50px 20px 20px;
-  font-family: 'Nunito', sans-serif;
+  background-color: var(--roxo);
+  color: var(--branco);
+  padding: 60px 20px 20px;
 }
 
 .footer-content {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Faz quebrar de linha no celular */
   gap: 40px;
+  justify-content: space-between;
 }
 
 .footer-coluna {
-  flex: 1 1 250px;
+  flex: 1;
+  min-width: 200px; /* Impede que fiquem muito espremidas */
 }
 
 .footer-coluna h3 {
-  color: #ff99bb;
-  font-size: 1.2rem;
-  margin-bottom: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  text-align: left;
-}
-
-.footer-coluna p,
-.footer-coluna ul {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: #d1b2be;
-  text-align: left;
+  color: var(--amarelo);
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .footer-coluna ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.footer-coluna p a,
-.footer-coluna > a {
-  color: #ff99bb;
+.footer-coluna ul li {
+  margin-bottom: 10px;
 }
 
-.footer-coluna ul li a {
-  display: block;
-  color: #d1b2be;
-  text-decoration: none;
-  margin-bottom: 8px;
-  text-align: left;
-  transition: color 0.2s;
-}
-
-.footer-coluna ul li a:hover {
+.footer-coluna ul li a, .footer-coluna p a {
   color: var(--branco);
-  text-decoration: underline;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s, color 0.2s;
 }
 
-.copyright,
-#copyright {
-  border-top: 1px solid rgb(236, 112, 164);
-  padding-top: 15px;
-  margin-top: 30px;
+.footer-coluna ul li a:hover, .footer-coluna p a:hover {
+  opacity: 1;
+  color: var(--amarelo);
+}
+
+.copyright {
   text-align: center;
-  font-size: 0.9rem;
-}
-
-
-@media (max-width: 640px) {
-  #abertura {
-    margin: -30px 16px 20px;
-  }
-
-  #doces .destaques {
-    max-width: 100%;
-  }
-
-  .footer-coluna h3,
-  .footer-coluna p,
-  .footer-coluna ul,
-  .footer-coluna ul li a {
-    text-align: center;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  * {
-    transition: none !important;
-  }
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória fina */
+  font-size: 14px;
 }
