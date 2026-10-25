@@ -129,11 +129,12 @@ button:focus-visible {
   font-size: clamp(1.1rem, 2.5vw, 1.4rem);
   line-height: 1.5;
   margin: 0;
+  text-aling:justify;
 }
 
 h2 {
   color: var(--vinho);
-  text-aling:left;
+  text-aling:justify;
   font-size: clamp(1.6rem, 4vw, 2.2rem);
   margin: 40px 16px 24px;
 }
@@ -202,7 +203,7 @@ h2 {
   align-items: center;
   justify-content: center;
   color: var(--vinho);
-  background-color: transparent;
+  background-color: #A52A2A ;
   border: 2px solid var(--vinho);
   border-radius: 30px;
   padding: 12px 28px;
