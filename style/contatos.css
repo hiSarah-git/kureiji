@@ -5,12 +5,18 @@ body {
   margin: 0;
 }
 
+/* contorno visível para quem navega pelo teclado */
+a:focus-visible {
+  outline: 3px solid #ac6d09;
+  outline-offset: 3px;
+}
+
 .conteudo {
-  background-color: #f9e1e9cc;
+  background-color: #f9e1e9;
   border-radius: 30px;
   padding: 50px;
   margin: 20px 30px;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .barranavegacao ul {
@@ -100,37 +106,52 @@ h3 {
   filter: brightness(70%);
 }
 
-.endereco {
-  margin-bottom: 16;
-  text-align: center;
+.endereco.table,
+.endereco .table {
+  --bs-table-bg: transparent;
+  --bs-table-border-color: transparent;
 }
 
-.endereco img {
-  width: 45px;
-}
-
-.endereco tr td:first-child {
-  padding-right: 4rem;
+.endereco.table td:first-child {
   color: #62021e;
 }
 
-.endereco tr {
-  color: #1184c2;
+.endereco .table {
+  --bs-table-color: #1184c2;
 }
 
+.endereco h3 {
+  color: #62021e;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+ 
 .endereco a {
   color: #ff1b5c;
 }
-
+ 
 .endereco a:hover {
   color: #1e8390;
   filter: brightness(70%);
+}
+ 
+.endereco a {
+  display: inline-block;
+  text-align: center;
+}
+
+.endereco a img {
+  display: block;
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
     background-color: #3b2a2e;
     color: #e6c5cc;
-    padding: 50px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     font-family: 'Arial', sans-serif;
 }
 
