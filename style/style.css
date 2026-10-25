@@ -85,9 +85,7 @@ button:focus-visible {
 
 .banner {
   position: relative;
-  background-image:
-    linear-gradient(rgba(98, 2, 30, 0.35), rgba(98, 2, 30, 0.55)),
-    url("../imagens/frentedaloja.jpg");
+  background-image:url("../imagens/frentedaloja.jpg");
   background-size: cover;
   background-position: center;
   min-height: 460px;
