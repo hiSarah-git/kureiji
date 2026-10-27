@@ -1,172 +1,292 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --fundo: #f4dade;       /* fundo da página */
+  --rosa: #ffc0cb;        /* barra de navegação e detalhes suaves */
+  --rosa-forte: #c21e56;  /* links, destaques e hover */
+  --vinho: #62021e;       /* textos, títulos e rodapé */
+  --branco: #ffffff;
+  --raio: 25px;
+  --sombra: 0 6px 18px rgba(98, 2, 30, 0.12);
 }
 
 body {
-  background-color: rgb(244, 218, 222);
+  margin: 0;
+  background: var(--fundo);
   font-family: 'Nunito', sans-serif;
-  color: #62021e;
+  color: var(--vinho);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: 'Fredoka', sans-serif;
 }
 
-.navbar ul {
-  list-style: none;
-  background-color: #f9a8d4;
+a {
+  color: var(--rosa-forte);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--vinho);
+  outline-offset: 3px;
+}
+
+.barranavegacao ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 35px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.barranavegacao ul li a {
+  display: block;
+  color: var(--vinho);
+  padding: 8px 25px;
+  text-decoration: none;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 20px;
+}
+
+.barranavegacao ul li a:hover {
+  background-color: var(--rosa-forte);
+  border-radius: 30px;
+}
+
+#logo {
+  width: 100px;
+  text-align: left;
+  display: block;
+}
+
+.banner {
+  background-image:
+    linear-gradient(rgba(98, 2, 30, 0.35), rgba(98, 2, 30, 0.55)),
+    url("../imagens/fachadaofc.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 460px;
+  height: 650px;
+  max-height: 80vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+/* "Bem-vindo à Kureiji Candy" em negrito */
+.banner h1 {
+  color: var(--branco);
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+  margin: 0;
+}
+
+.banner img {
+  width: clamp(120px, 22vw, 200px);
+  height: auto;
+}
+
+
+#abertura {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 24px;
+  text-align: center;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+
+#abertura p {
+  margin: 0;
+  color: var(--vinho);
+  font-family: 'Fredoka', sans-serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  line-height: 1.5;
+}
+
+#abertura span {
+  color: var(--rosa-forte);
+  font-weight: 700;
+}
+
+
+
+#linkdeavaliacao {
+  text-align: center;
+  margin: 24px 16px;
+}
+
+#linkdeavaliacao a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--vinho);
+  border: 2px solid var(--vinho);
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#linkdeavaliacao a:hover,
+#linkdeavaliacao a:active {
+  background-color: var(--vinho);
+  border-radius: 30px;
+  color: var(--branco);
+}
+
+h2 {
+  color: var(--vinho);
+  font-weight: 700;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  text-align: left;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+#doces {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px 40px;
+}
+
+#doces .card {
+  background-color: var(--branco);
+  border: none;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  padding: 15px;
+  text-align: center;
+}
+
+#doces .card-img-top {
+  width: 100%;
+  height: 160px;
+  border-radius: var(--raio);
+  object-fit: cover;
+}
+
+#doces .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 0;
+}
+
+#doces .card-title {
+  color: var(--vinho);
+  margin-bottom: 10px;
+}
+
+#doces .card-text {
+  color: var(--vinho);
+  margin-bottom: 12px;
+}
+
+#doces .link-dragao {
+  margin-top: auto;
+}
+
+.link-dragao a {
+  color: var(--rosa-forte);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.link-dragao a:hover {
+  color: var(--vinho);
+}
+
+
+
+footer {
+  background-color: var(--vinho);
+  color: var(--branco);
+  padding: 50px 20px 20px;
+  margin-top: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.footer-coluna {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-coluna h3 {
+  color: var(--rosa);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.footer-coluna p,
+.footer-coluna ul {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: left;
+}
+
+.footer-coluna ul {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.navbar ul li a {
-  display: inline-block;
-  color: white;
+.footer-coluna ul li a,
+.footer-coluna p a {
+  display: block;
+  color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
-  font-weight: 600;
-  padding: 14px 40px;
+  margin-bottom: 8px;
 }
 
-.navbar ul li a:hover {
-  background-color: #4dd0e1;
-  border-radius: 70px;
+.footer-coluna ul li a:hover,
+.footer-coluna p a:hover {
+  color: var(--rosa);
 }
 
-.banner {
-	background-image: url("../imagens/frentedaloja.jpg");
-	background-size: cover;
-	background-position: center;
-	height: 650px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.copyright {
+  border-top: 1px solid rgba(255, 192, 203, 0.4);
+  padding-top: 15px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
 }
 
-.banner img {
-	width: 400px;
- 	height: auto;
-	border-radius: 20px;
-}
-
-.banner h1 {
-  color: white;
-  font-size: 3rem;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-}
-
-.logo-texto {
-  color: white;
-  font-family: 'Fredoka', sans-serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-  background-color: rgba(255,255,255,0.15);
-  padding: 10px 30px;
-  border-radius: 16px;
-  margin-top: 10px;
-}
-
-.banner-sub {
-  color: white;
-  font-size: 1.1rem;
-  margin-top: 12px;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-}
-
-/* ========== BOTÃO AVALIE ========== */
-.centralizar {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 30px 20px;
-}
-
-.botao-avalie {
-  display: inline-block;
-  color: #62021e;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: 'Nunito', sans-serif;
-  padding: 16px 50px;
-  border: 2px solid #62021e;
-  border-radius: 8px;
-}
-
-.botao-avalie:hover {
-  background-color: #4dd0e1;
-  color: white;
-  border-color: #4dd0e1;
-}
-
-.conteudo-principal {
-  max-width: 800px;  
-  margin: 0 auto;    
-  padding: 20px;     
-}
-
-#linkdeavalicao {
-	display: block;
-	color: white;
-	padding: 30px 60px;
-	text-decoration: none;
-	text-align: center;
-
-	max-width: 200px;    
-	margin: 0 auto;
-
-	border: 2px solid whitesmoke; 
-	border-radius: 5px;       
-	font-weight: bold;        
-}
-
-div.img {
-	width:10px;        
-    height:10px;  
-}
-
-#linkdeavalicao:hover {
-	background-color: #4dd0e1;
+.copyright p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 
-h1 {
-	color: #62021e;
-	text-align: center;
-	background-color: img;
-}
-h2 {
-	
-}
-h3 {
-	color: #62021e;
-}
 
-h4 {
-	color: blue;
-	text-align: center;
-}
+@media (max-width: 640px) {
+  .banner {
+    min-height: 380px;
+  }
 
-
-p {
-	color: #62021e;
-	text-align: center;
-}
-
-footer {
-	background-color: rgb(255, 192, 203);
-	color: white;
-	text-align: center;
-	padding: 20px;
-}
-
-#copyright {
-	border-top: 1px solid rgb(236, 112, 164);
-	padding: 15px;
-	margin-top: 20px;
+  .footer-coluna h3,
+  .footer-coluna p,
+  .footer-coluna ul,
+  .footer-coluna ul li a,
+  .footer-coluna p a {
+    text-align: center;
+  }
 }

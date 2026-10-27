@@ -1,58 +1,381 @@
 <html>
 
+
 <head>
-	<title>Cardápio</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="../style/cardapio.css" />
-
-<body>
-	<div class="barranavegacao">
-		<ul>
-			<li><a href="../index.html">Início</a></li>
-			<li><a href="#">Cardápio</a></li>
-			<li><a href="Sobre_nos.html">Sobre nós</a></li>
-			<li><a href="Contato_e_endereco.html">Contato e endereço</a></li>
-		</ul>
-	</div>
-
-		<img src="../imagens/placeholder.jpg" /> 
-		<h2>De Uma Olhada No Nosso Cardápio</h2>
+    <title>Cardápio</title>
+    <meta charset="UTF-8">
 
 
-	<div>
-		 <a href="https://kureijicandy.menulegal.app/#product">link para cardapio</a> 
-	</div>
+<!-- FONTE PARA TITULO FREDOKA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 
-	<h3>Recomendações da Casa:</h3>
-	<table>
-		<tr>
-			<td> Doce </td>
-			<td> Imagem </td>
-		</tr>
-		<tr>
-			<td> Doce1 </td>
-			<td> <img src="../imagens/placeholder.jpg" /> </td>
-		</tr>
-		<tr>
-			<td> Doce2 </td>
-			<td> <img src="../imagens/placeholder.jpg" /> </td>
-		</tr>
-	</table>
-	<footer>
-		<h3>Kureiji Candy</h3>
 
-		<p>
-			Bolos, doces e muito mais inspirados no universo dos animes.
-		</p>
+    <!-- FONTE PARA TEXTO  NUNITO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 
-		<p>📍 Av. da Liberdade, 450 – Liberdade, São Paulo - SP.</p>
 
-		<p>📞 (11) 99513-6162</p>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/cardapio.css" />
+</head>
 
-		<div id="copyright">
-			<p>Kureiji Candy © 2026 - Todos os direitos reservados.</p>
-		</div>
-	</footer>
+
+<body class="pagina-cardapio">
+   
+    <div class="barranavegacao">
+        <ul>
+            <li><img src="../imagens/logo_kureiji_transparente.png" id="logo"></li>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="Cardapio.html">Cardápio</a></li>
+            <li><a href="Sobre_nos.html">Sobre nós</a></li>
+            <li><a href="Contato_e_endereco.html">Contato e endereço</a></li>
+        </ul>
+    </div>
+
+
+    <div class="banner">
+        <h1>Os sabores mais supreendentes!</h1>
+        <img src="../imagens/logocardapio.jpg"/>
+    </div>
+
+
+    <h3>Recomendações da Casa</h3>      
+
+
+
+<section class="text-center mb-5">
+           
+            <h1 class="display-4 fw-bold">Nossas delícias</h1>
+            <p class="lead">
+            <p class="text-uppercase subtitulo"> A arte da culinária, descubra 
+            <br/> doces inspirados na delicadeza da confeitaria japonesa.</p> 
+        </section>
+   
+<div>
+ <center>
+ <table>
+ <tr>
+
+<!-- DEPOIS COLOCAR OS DESTAQUES DENTRO DA TAG<> TH, AQUELES QUE ESTÃO NA PÁGINA INICIAL -->
+   
+<td> <section class="card" style="max-width: 320px">
+   <img src="../imagens/Crocs doce-thumbnail.png" class="card-img-top" alt="Kureiji">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Doce</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Recheado com chocolate, Nutella ou doce de leite e finalizado com farelo de Oreo.</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section> </td>
+
+<td> <section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section> </td>
+
+<td> <section class="card" style="max-width: 320px">
+  <img src="../imagens/Tayaki Panda-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Panda</h4>
+    <p class="card-text">Massa de tayaki à base de farináceos diversos, leite, ovos e um toque de manteiga. Recheios de Nutella, chocolate ou doce de leite.</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section> </td>
+
+<td> <section class="card" style="max-width: 320px">
+  <img src="../imagens/Tayaki patinhas-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Patinhas (3 ou 5 unidades)</h4>
+    <p class="card-text">Massa de tayaki à base de farináceos diversos, leite, ovos e um toque de manteiga. Recheios de Nutella, chocolate ou doce de leite.</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section> </td>
+
+ </tr>
+ </table>
+ </center>
+</div>
+ 
+ 
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+
+
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+
+
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+
+
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+
+
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+
+
+
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+
+
+
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+
+
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+
+
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+
+
+
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+
+
+
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+
+
+
+
+<section class="card" style="max-width: 320px">
+  <img src="../imagens/crocs salgado-thumbnail.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Tayaki Crocs Salgado</h4>
+    <p class="card-text">Taiyaki em formato de Crocs! Versão salgada com massa de pão de queijo, recheada com muçarela ou goiabada!</p>
+    <a href="#" class="btn-solid theme-primary">Clique aqui</a>
+  </div>
+</section>
+
+      
+
+        <h2>Confira Nosso Cardápio:</h2>
+
+    <div class="links">
+
+         <a href="https://kureijicandy.menulegal.app/#product" target="_blank">Kureiji Cardápio</a>
+    </div>
+</br> </br>
+
+
+        <footer>
+        <div class="footer-content">
+
+
+            <div class="footer-coluna">
+                <h3>Kureiji Candy</h3>
+                <p>Doces artesanais feitos com amor e ingredientes selecionados. Cada mordida é uma experiência
+                    especial.</p>
+            </div>
+
+
+            <div class="footer-coluna">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="Sobre_nos.html">Sobre Nós</a></li>
+                    <li><a href="Cardapio.html">Cardápio</a></li>
+                    <li><a href="Contato_e_endereco.html">Endereço</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-coluna">
+                <h3>Contato</h3>
+                <a href="https://www.instagram.com/kureijicandy/" target="_blank"
+                    rel="noopener noreferrer">@kureijicandy</a>
+                <p>📍São Paulo, SP</p>
+                <p>🕒Seg–Sáb: 9h às 18h</p>
+            </div>
+
+
+            <div class="footer-coluna">
+                <h3>Desenvolvedoras</h3>
+                <p>Site desenvolvido GSTM System On.</p>
+            </div>
+           
+        </div>
+
+
+        <div class="copyright">
+            <p>&copy; 2024 Kureiji Candy — Todos os direitos reservados</p>
+        </div>
+
+
+    </footer>
 </body>
+
+
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../js/cardapio.js"></script>
+
 
 </html>
