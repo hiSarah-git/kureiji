@@ -4,6 +4,11 @@ body {
     background-size: cover;
     margin: 0;
 }
+/* contorno visível para quem navega pelo teclado */
+a:focus-visible {
+  outline: 3px solid #ac6d09;
+  outline-offset: 3px;
+}
 
 #logo {
   width: 100px;
@@ -86,30 +91,26 @@ h1 {
 
 /* Contentor principal que coloca os dois blocos lado a lado */
 .sobre-nos {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 50px;
     padding: 60px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
     background-color: #fff9e6;
 }
 
 /* 1. O Cartão Cor-de-Rosa à Esquerda */
 .cartao-perfil {
-    background-color: rgb(241, 136, 171);
+     background-color: rgb(241, 136, 171);
     color: white;
     padding: 40px 30px;
     border-radius: 25px;
     text-align: center;
-    width: 380px;
-    flex-shrink: 0;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .avatar-perfil {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 200px;
     object-fit: cover;
     border-radius: 15%;
@@ -131,7 +132,6 @@ h1 {
     margin-bottom: 35px;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
-
 }
 
 /* Ícones decorativos no fundo do cartão */
@@ -149,7 +149,7 @@ h1 {
 /* 2. O Bloco de Texto à Direita */
 .conteudo-historia {
     max-width: 650px;
-
+    margin: 0 auto;
 }
 
 .conteudo-historia h1 {
@@ -255,18 +255,16 @@ a {
 }
 
 .imagens-fundadores {
-    background-color: #c5a0e2;
+     background-color: #c5a0e2;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 120px;
-    padding: 20px 20px 40px 20px;
-    margin-top: 0;
+    gap: 40px;
+    padding: 20px;
     width: 100%;
     max-width: 1200px;
     box-sizing: border-box;
-    position: relative;
 }
 
 /* Faz o título ocupar a linha inteira no topo e ficar centralizado */
@@ -284,17 +282,33 @@ a {
 .fundador-item {
     display: flex;
     align-items: center;
-    gap: 20px 60px;
+    gap: 20px;
     /* Espaço entre a foto e o nome */
 }
 
 .fundador-item img {
     width: 200px;
-    /* Ajuste o tamanho da foto se achar necessário */
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    /* Deixa a foto redonda, se quiser */
+}
+
+/* Ajustes para celulares */
+@media (max-width: 576px) {
+    .secao-fundadores {
+        box-sizing: border-box;
+        padding: 30px 15px;
+    }
+
+    .fundador-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fundador-item img {
+        width: 160px;
+        height: 160px;
+    }
 }
 
 .fundador-item p {
@@ -304,4 +318,16 @@ a {
     font-size: 18px;
     font-weight: bold;
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    .barranavegacao ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .barranavegacao ul li a {
+        padding: 10px 15px;
+        font-size: 18px;
+    }
 }

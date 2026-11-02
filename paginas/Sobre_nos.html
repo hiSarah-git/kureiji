@@ -2,21 +2,26 @@
 <html lang="pt-BR">
 
 <head>
-	<title>Sobre Nós</title>
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sobre Nós</title>
 
-	<!-- FONTE PARA TITULO FREDOKA -->
+
+	<!-- FONTE PARA TITULO: FREDOKA -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
 		rel="stylesheet">
 
-	<!-- FONTE PARA TEXTO  NUNITO -->
+	<!-- FONTE PARA TEXTO: NUNITO -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
 		rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="../style/sobre_nos.css">
 </head>
@@ -40,44 +45,47 @@
 	</div>
 
 	<section class="sobre-nos">
-		<!-- Lado Esquerdo: O Cartão Cor-de-Rosa com a imagem -->
-		<div class="cartao-perfil">
-			<img src="../imagens/kureiji-candy-letreiro.jpg" alt="Kureiji Candy" class="avatar-perfil">
-			<h3>Kureiji Candy.</h3>
-			<p class="cargo">Fundadores & Criadores</p>
+    <div class="container">
+        <div class="row g-4 align-items-start">
 
-			<div class="estatisticas">
-				<div class="stat-item"><span>🎂</span></div>
-				<div class="stat-item"><span>🍭</span></div>
-				<div class="stat-item"><span>⭐</span></div>
-			</div>
-		</div>
+            <!-- Lado esquerdo: Cartão de perfil -->
+            <div class="col-12 col-md-5">
+                <div class="cartao-perfil">
+                    <img src="../imagens/kureiji-candy-letreiro.jpg"
+                         alt="Kureiji Candy"
+                         class="avatar-perfil">
 
-		<!-- Lado Direito: O teu texto original -->
-		<div class="conteudo-historia">
-			<h1>Uma História Doce 🌸</h1>
-			<p>A Kureiji Candy nasceu da união entre uma paixão pela gastronomia, criatividade e referências da cultura
-				japonesa. A marca foi criada pelo casal Danilo Miki de Sousa e Jéssica Costa, que transformou essa
-				paixão em um
-				negócio cheio de personalidade.</p>
-			<p>A história começou com Danilo, que após anos trabalhando no setor de tecnologia decidiu mudar de carreira
-				e
-				seguir seu interesse pela culinária. Durante uma viagem ao Japão, em 2022, conheceu o tradicional
-				sembei, um
-				biscoito japonês crocante, e surgiu a ideia de trazer essa experiência para o Brasil.</p>
-			<p>Em 2024, nasceu a IKA, especializada em sembei com sabores diferenciados. Poucos meses depois, surgiu a
-				Kureiji
-				Candy, uma doceria que combina doces, cultura pop japonesa e criatividade.</p>
-			<p>Na Kureiji, os doces ganham formatos e referências inesperadas: personagens de anime e Pokémon, tayakis
-				em
-				formato de Crocs, pandas e outras criações. Entre os produtos que ganharam destaque nas redes sociais
-				estão o
-				Sopro do Dragão e a panacota de capivara.</p>
-			<p>Hoje, a Kureiji Candy busca transformar cada doce em uma experiência, unindo sabor, criatividade, cultura
-				pop e
-				diversão para despertar curiosidade e criar momentos que merecem ser compartilhados.</p>
-		</div>
-	</section>
+                    <h3>Kureiji Candy.</h3>
+                    <p class="cargo">Fundadores & Criadores</p>
+
+                    <div class="estatisticas">
+                        <div class="stat-item"><span>🎂</span></div>
+                        <div class="stat-item"><span>🍭</span></div>
+                        <div class="stat-item"><span>⭐</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lado direito: História -->
+            <div class="col-12 col-md-7">
+                <div class="conteudo-historia">
+                    <h1>Uma História Doce 🌸</h1>
+
+                    <p>A Kureiji Candy nasceu da união entre uma paixão pela gastronomia, criatividade e referências da cultura japonesa. A marca foi criada pelo casal Danilo Miki de Sousa e Jéssica Costa, que transformou essa paixão em um negócio cheio de personalidade.</p>
+
+                    <p>A história começou com Danilo, que após anos trabalhando no setor de tecnologia decidiu mudar de carreira e seguir seu interesse pela culinária. Durante uma viagem ao Japão, em 2022, conheceu o tradicional sembei, um biscoito japonês crocante, e surgiu a ideia de trazer essa experiência para o Brasil.</p>
+
+                    <p>Em 2024, nasceu a IKA, especializada em sembei com sabores diferenciados. Poucos meses depois, surgiu a Kureiji Candy, uma doceria que combina doces, cultura pop japonesa e criatividade.</p>
+
+                    <p>Na Kureiji, os doces ganham formatos e referências inesperadas: personagens de anime e Pokémon, tayakis em formato de Crocs, pandas e outras criações. Entre os produtos que ganharam destaque nas redes sociais estão o Sopro do Dragão e a panacota de capivara.</p>
+
+                    <p>Hoje, a Kureiji Candy busca transformar cada doce em uma experiência, unindo sabor, criatividade, cultura pop e diversão para despertar curiosidade e criar momentos que merecem ser compartilhados.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 	<section class="secao-fundadores">
 		<div class="imagens-fundadores">
@@ -126,6 +134,8 @@
 		<div class="copyright">
 			<p>&copy; 2024 Kureiji Candy — Todos os direitos reservados</p>
 		</div>
-
 	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
