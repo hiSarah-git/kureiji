@@ -141,7 +141,7 @@ a:focus-visible {
   max-width: 800px;
   margin: 20px auto;
   padding: 24px;
-  text-align: center;
+  text-align: left;
   background: linear-gradient(to bottom, #fff5d6, #ffd6d8);
   border: 2px solid var(--rosa);
   border-radius: var(--raio);
