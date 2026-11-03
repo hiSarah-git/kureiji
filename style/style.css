@@ -1,8 +1,13 @@
 :root {
-  --fundo: #f4dade;       /* fundo da página */
+  --fundo: #fff9e6;       /* fundo da página (creme) */
   --rosa: #ffc0cb;        /* barra de navegação e detalhes suaves */
-  --rosa-forte: #c21e56;  /* links, destaques e hover */
-  --vinho: #62021e;       /* textos, títulos e rodapé */
+  --rosa-card: #f188ab;   /* cartões */
+  --rosa-forte: #c21e56;  /* links, destaques */
+  --vinho: #62021e;       /* títulos */
+  --texto: #1f0109;       /* texto corrido */
+  --roxo: #c5a0e2;        /* destaques em lilás */
+  --turquesa: #4dd0e1;    /* hover do menu */
+  --rodape: #3b2a2e;      /* fundo do rodapé */
   --branco: #ffffff;
   --raio: 25px;
   --sombra: 0 6px 18px rgba(98, 2, 30, 0.12);
@@ -12,7 +17,7 @@ body {
   margin: 0;
   background: var(--fundo);
   font-family: 'Nunito', sans-serif;
-  color: var(--vinho);
+  color: var(--texto);
 }
 
 h1, h2, h3, h4, h5 {
@@ -24,7 +29,7 @@ a {
 }
 
 a:focus-visible {
-  outline: 3px solid var(--vinho);
+  outline: 3px solid #ac6d09;
   outline-offset: 3px;
 }
 
@@ -45,7 +50,7 @@ a:focus-visible {
 
 .barranavegacao ul li a {
   display: block;
-  color: var(--vinho);
+  color: var(--branco);
   padding: 8px 25px;
   text-decoration: none;
   font-family: 'Fredoka', sans-serif;
@@ -53,9 +58,13 @@ a:focus-visible {
 }
 
 .barranavegacao ul li a:hover {
-  background-color: var(--rosa-forte);
+  background-color: var(--turquesa);
   color: var(--branco);
   border-radius: 30px;
+}
+
+.barranavegacao ul li a:visited {
+  color: var(--rosa-forte);
 }
 
 #logo {
@@ -65,18 +74,30 @@ a:focus-visible {
 
 /* ---------- CARROSSEL ---------- */
 #carouselKureiji {
-  width: 90%;
-  max-width: 1000px;
-  margin: 35px auto;
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0;
   overflow: hidden;
-  border-radius: var(--raio);
+  border-radius: 0;
 }
 
 #carouselKureiji .carousel-item img {
   width: 100%;
-  height: 420px;
+  height: 80vh;
+  min-height: 400px;
   object-fit: cover;
-  border-radius: var(--raio);
+  border-radius: 0;
+}
+
+/* película escura para o texto branco aparecer bem */
+#carouselKureiji .carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(98, 2, 30, 0.35);
+  border-radius: 0;
+  pointer-events: none;
 }
 
 #carouselKureiji .carousel-indicators {
@@ -89,17 +110,19 @@ a:focus-visible {
   border-radius: 50%;
 }
 
-/* ---------- BANNER ---------- */
-
-
-  .banner {
-  background-color: var(--rosa-forte);
-  text-align: center;
-  padding: 40px 16px;
-  min-height: 200px;
+/* ---------- BANNER (texto por cima do carrossel) ---------- */
+.banner {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding: 16px;
+  pointer-events: none; /* deixa os botões do carrossel clicáveis */
+}
+
 /* "Bem-vindo à Kureiji Candy" em negrito */
 .banner h1 {
   color: var(--branco);
@@ -120,9 +143,10 @@ a:focus-visible {
   margin: 20px auto;
   padding: 24px;
   text-align: center;
+  background: linear-gradient(to bottom, #fff5d6, #ffd6d8);
+  border: 2px solid var(--rosa);
   border-radius: var(--raio);
   box-shadow: var(--sombra);
-  background:var(--rosa);
 }
 
 #abertura p {
@@ -149,6 +173,7 @@ a:focus-visible {
   align-items: center;
   justify-content: center;
   color: var(--vinho);
+  background-color: var(--roxo);
   border: 2px solid var(--vinho);
   border-radius: 20px;
   padding: 10px 24px;
@@ -183,7 +208,7 @@ h2 {
 }
 
 #doces .card {
-  background-color: var(--branco);
+  background-color: var(--rosa-card);
   border: none;
   border-radius: var(--raio);
   box-shadow: var(--sombra);
@@ -230,8 +255,8 @@ h2 {
 
 /* ---------- RODAPÉ ---------- */
 footer {
-  background-color: var(--vinho);
-  color: var(--branco);
+  background-color: var(--rodape);
+  color: #e6c5cc;
   padding: 50px 20px 20px;
   margin-top: 20px;
   font-family: 'Nunito', sans-serif;
@@ -252,7 +277,7 @@ footer {
 }
 
 .footer-coluna h3 {
-  color: var(--rosa);
+  color: #ff99bb;
   font-size: 1.2rem;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -263,7 +288,7 @@ footer {
 .footer-coluna ul {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.85);
+  color: #d1b2be;
   text-align: left;
 }
 
@@ -276,18 +301,18 @@ footer {
 .footer-coluna ul li a,
 .footer-coluna p a {
   display: block;
-  color: rgba(255, 255, 255, 0.85);
+  color: #d1b2be;
   text-decoration: none;
   margin-bottom: 8px;
 }
 
 .footer-coluna ul li a:hover,
 .footer-coluna p a:hover {
-  color: var(--rosa);
+  color: #ffffff;
 }
 
 .copyright {
-  border-top: 1px solid rgba(255, 192, 203, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 15px;
   margin-top: 30px;
   text-align: center;
@@ -296,26 +321,18 @@ footer {
 
 .copyright p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.85);
+  color: #b394a1;
 }
 
 /* ---------- RESPONSIVIDADE ---------- */
 @media (max-width: 768px) {
-  #carouselKureiji {
-    width: 95%;
-    margin: 20px auto;
-  }
-
   #carouselKureiji .carousel-item img {
-    height: 250px;
+    height: 60vh;
+    min-height: 300px;
   }
 }
 
 @media (max-width: 640px) {
-  .banner {
-    min-height: 150px;
-  }
-
   .footer-coluna h3,
   .footer-coluna p,
   .footer-coluna ul,
