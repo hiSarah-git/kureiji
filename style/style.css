@@ -90,7 +90,6 @@ a:focus-visible {
   border-radius: 0;
 }
 
-/* película escura para o texto branco aparecer bem */
 #carouselKureiji .carousel-item::after {
   content: "";
   position: absolute;
@@ -205,10 +204,10 @@ h2 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px 40px;
+  background-color: var(--rosa-card);
 }
 
 #doces .card {
-  background-color: var(--rosa-card);
   border: none;
   border-radius: var(--raio);
   box-shadow: var(--sombra);
