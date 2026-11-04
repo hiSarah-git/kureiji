@@ -53,6 +53,11 @@ a:focus-visible {
   color: #c21e56;
 }
 
+.barranavegacao ul li a.active, 
+.barranavegacao ul li a.active:visited {
+    color: #ffffff;
+}
+
 h2 {
   color: #62021e;
   text-align: center;
@@ -125,9 +130,6 @@ h3 {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: bold;
   font-size: 30px;
-}
-
-.endereco img{
 }
 
 .endereco a {
@@ -214,4 +216,16 @@ footer {
 
 a {
     color: #c21e56;
+}
+
+@media (max-width: 768px) {
+    .barranavegacao ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .barranavegacao ul li a {
+        padding: 10px 15px;
+        font-size: 18px;
+    }
 }

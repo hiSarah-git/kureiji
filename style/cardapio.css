@@ -66,44 +66,60 @@ h1, h2, h3, h4 {
 }
 
 
+/* ---------- BARRA DE NAVEGAÇÃO ---------- */
+
 .barranavegacao ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0px 35px;
-  background-color: pink;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 35px;
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-.barranavegacao ul li a {
-  display: block;
-  color: white;
-  padding: 8px 25px;
-  text-decoration: none;
-  font-family: 'Fredoka', sans-serif;
-  font-size: 20px;
+.barranavegacao ul li a,
+.barranavegacao ul li a:visited {
+    display: block;
+    color: #c21e56;
+    padding: 8px 25px;
+    text-decoration: none;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
 }
 
-
-.barranavegacao ul li a:hover {
-  background-color: #4dd0e1;
-  border-radius: 30px;
+/* Página atual */
+.barranavegacao ul li a.active,
+.barranavegacao ul li a.active:visited {
+    color: white;
 }
 
+/* Efeito para dispositivos com mouse */
+@media (hover: hover) {
+    .barranavegacao ul li a:hover {
+        background-color: #4dd0e1;
+        border-radius: 30px;
+    }
+}
 
 #logo {
-  width: 100px;
-  text-align: left;
-  display: block;
+    width: 100px;
+    text-align: left;
+    display: block;
 }
 
+/* Responsividade do menu */
+@media (max-width: 768px) {
+    .barranavegacao ul {
+        flex-direction: column;
+        padding: 10px;
+    }
 
-.barranavegacao ul li a:visited {
-  color: #c21e56;
+    .barranavegacao ul li a {
+        padding: 10px 15px;
+        font-size: 18px;
+    }
 }
-
 
 h1 {
     color: #62021e;
