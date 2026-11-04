@@ -205,6 +205,10 @@ h2 {
   margin: 0 auto;
   padding: 0 16px 40px;
   background-color: var(--rosa-card);
+  background: linear-gradient(to bottom, #fff5d6, #ffd6d8);
+  border: 2px solid var(--rosa);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
 }
 
 #doces .card {
