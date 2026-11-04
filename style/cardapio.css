@@ -678,3 +678,55 @@ a {
 
 
 
+
+/* Container flexível geral */
+.vitrine-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+/* Centralização de títulos de seção */
+.titulo-secao {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* O Card Individual */
+.card {
+  max-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  box-sizing: border-box;
+  background-color: #fff; /* Altere para a cor de fundo do seu card */
+  border: 1px solid #ddd; /* Opcional: borda leve */
+  border-radius: 8px;     /* Opcional: cantos arredondados */
+  
+  /* Espaço controlado no topo do card antes da foto começar */
+  padding-top: 15px; 
+}
+
+/* Padronização de tamanho das imagens */
+.card-img-top {
+  width: 85%;
+  height: 220px;       
+  object-fit: cover;   
+}
+
+/* Corpo do card e mola flexível para alinhar botões */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.card-text {
+  flex-grow: 1;        /* Empurra o botão "Clique aqui" / "Veja!" sempre para o rodapé */
+  margin-bottom: 15px;
+}
