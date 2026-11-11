@@ -26,6 +26,9 @@ h1, h2, h3, h4, h5 {
 
 a {
   color: var(--rosa-forte);
+  text-decoration: none;
+  text-align: left ;
+
 }
 
 a:focus-visible {
@@ -260,73 +263,90 @@ h2 {
 
 /* ---------- RODAPÉ ---------- */
 footer {
-  background-color: var(--rodape);
-  color: #e6c5cc;
-  padding: 50px 20px 20px;
-  margin-top: 20px;
-  font-family: 'Nunito', sans-serif;
+    background-color: #3b2a2e;
+    /* Fundo escuro idêntico à imagem */
+    color: #e6c5cc;
+    padding: 50px 20px 20px 20px;
+    font-family: 'Arial', sans-serif;
 }
+
 
 .footer-content {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
 }
+
 
 .footer-coluna {
-  flex: 1;
-  min-width: 250px;
+    flex: 1;
+    min-width: 250px;
 }
 
+
 .footer-coluna h3 {
-  color: #ff99bb;
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  text-align: left;
+    color: #ff99bb;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Fredoka', sans-serif;
+    text-align: left ;
+
+
 }
+
 
 .footer-coluna p,
 .footer-coluna ul {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #d1b2be;
-  text-align: left;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #d1b2be;
+    font-family: 'Nunito', sans-serif;
+    text-align: left ;
 }
+
 
 .footer-coluna ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left ;
+
+
 }
 
-.footer-coluna ul li a,
-.footer-coluna p a {
-  display: block;
-  color: #d1b2be;
-  text-decoration: none;
-  margin-bottom: 8px;
+
+.footer-coluna ul li a {
+    color: #d1b2be;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left ;
 }
 
-.footer-coluna ul li a:hover,
-.footer-coluna p a:hover {
-  color: #ffffff;
+
+.footer-coluna ul li a:hover {
+    color: #ffffff;
 }
+
 
 .copyright {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 15px;
-  margin-top: 30px;
-  text-align: center;
-  font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: #b394a1;
 }
 
+
 .copyright p {
-  margin: 0;
-  color: #b394a1;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    color: #b394a1;
 }
 
 /* ---------- RESPONSIVIDADE ---------- */
