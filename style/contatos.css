@@ -194,6 +194,7 @@ footer {
     margin: 0;
 }
 
+
 .footer-coluna ul li a {
     color: #d1b2be;
     text-decoration: none;
@@ -216,6 +217,11 @@ footer {
 
 a {
     color: #c21e56;
+    text-decoration: none;
+    outline: none !important; 
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
 
 @media (max-width: 768px) {
