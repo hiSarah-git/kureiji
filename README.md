@@ -52,6 +52,7 @@ Não fazem parte da versão atual cadastro de usuários, login, carrinho, pagame
 
 - **HTML5:** estrutura e conteúdo das páginas.
 - **CSS3:** estilos, cores, tipografia e organização visual.
+- **Bootstrap:** estilos e organização visual.
 - **Google Fonts:** fontes Fredoka e Nunito/Nunito Sans.
 - **Imagens locais:** logotipo, fotos da loja, produtos e ícones.
 - **Links externos:** cardápio, redes sociais, mapas e avaliação da loja.
@@ -82,6 +83,11 @@ Os esboços abaixo representam a organização prevista das telas, sem detalhar 
 
 ![Captura de Tela](/imagens/screenshots/Contato_e_endereco.png)
 
+## 8. Como abrir o projeto
+
+1. Baixe o repositório ou extraia o arquivo `.zip` disponível na raiz do projeto.
+2. Abra a pasta do projeto no seu computador.
+3. Dê um duplo clique no arquivo **`index.html`** para abri-lo diretamente no seu navegador padrão.
 
 ### Navegação
 
